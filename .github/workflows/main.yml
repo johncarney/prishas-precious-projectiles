@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Get version
-        id:   get_version
+        id:   get-version
         run:  echo "::set-output name=VERSION::$(node ./.github/workflows/get-version.js)"
       - name: Zip files
         run: |
