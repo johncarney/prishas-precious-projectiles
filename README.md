@@ -9,10 +9,24 @@ Foundry VTT.
 1. Open your Foundry VTT server's administration page.
 2. Go to the **Add-On Modules** tab.
 3. Click on **Install Module**.
-4. Paste the following URL into the **Manifest URL** field: `https://github.com/johncarney/prishas-precious-projectiles/releases/download/latest/module.json`
+4. Paste the following URL into the **Manifest URL** field:<br>
+   `https://github.com/johncarney/prishas-precious-projectiles/releases/download/latest/module.json`
 5. Click on **Install**.
+6. Now you can activate the module in any of your Pathfinder 2e game worlds.
 
-Now you can activate the module in any of your Pathfinder 2e game worlds.
+### Compendium browser
+
+To make the items available in the Compendium Browser, you will need to manually
+enable the module's compendium pack. To do this:
+
+1. Log in to your game world as a Gamemaster.
+2. Open up the Compendium Browser from a character sheet (go to the inventory
+   tab and click on any of the search icons).
+3. Click on **Settings**.
+4. Scroll down until you find _Prisha's Precious Projectiles_ under
+   **Equipment**.
+5. Check the corresponding checkbox.
+6. Click on **Save Changes** and close the Compendium Browser.
 
 ## Known issues
 
@@ -37,11 +51,9 @@ a lot of work for me. However, Foundry will not stop you from using Prisha's gen
 
 ### Compendium browser
 
-The items in this module are not showing up in the compendium browser that pops
-up when you click one of the search buttons in the inventory tab of a character
-sheet. To add an item to a character's inventory, search for it in the
-compendium tab of the side bar and drag it on to the character sheet. If the
-character is purchasing the item, you will need to manually adjust their gold.
+The compendium pack in this module is not enabled in the Compendium Browser
+until you manually enable it. I am looking for a way to automate this so it is
+enabled when the module is activated.
 
 ### PF2e Ranged Combat
 
