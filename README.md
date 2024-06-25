@@ -10,7 +10,7 @@ Foundry VTT.
 2. Go to the **Add-On Modules** tab.
 3. Click on **Install Module**.
 4. Paste the following URL into the **Manifest URL** field:<br>
-   `https://github.com/johncarney/prishas-precious-projectiles/releases/download/latest/module.json`
+   `https://raw.githubusercontent.com/johncarney/prishas-precious-projectiles/master/module.json`
 5. Click on **Install**.
 6. Now you can activate the module in any of your Pathfinder 2e game worlds.
 

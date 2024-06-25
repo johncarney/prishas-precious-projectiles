@@ -36,6 +36,6 @@
     }
   ],
   "url":      "https://github.com/johncarney/prishas-precious-projectiles",
-  "manifest": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/latest/module.json",
-  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/latest/prishas-precious-projectiles.zip"
+  "manifest": "https://raw.githubusercontent.com/johncarney/prishas-precious-projectiles/master/module.json",
+  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/1.0.2/prishas-precious-projectiles.zip"
 }
