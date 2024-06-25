@@ -1,0 +1,39 @@
+{
+  "id": "prishas-precious-projectiles",
+  "title": "Prisha's Precious Projectiles",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": "A compendium of arrows, crossbow bolts, and various other projectiles made from precious materials such as cold iron and silver.",
+  "authors": [
+    {
+      "name": "John Carney",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "prishas-precious-projectiles",
+      "label": "Prisha's Precious Projectiles",
+      "path": "packs/prishas-precious-projectiles",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "url": "https://github.com/johncarney/prishas-precious-projectiles"
+}
