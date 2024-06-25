@@ -11,7 +11,9 @@ jobs:
       - name: Get version
         id:   get-version
         run:  echo "::set-output name=VERSION::$(node ./.github/workflows/get-version.js)"
-      - run: zip -r ./prishas-precious-projectiles.zip module.json packs README.md LICENSE
+      - name: Zip files
+        run: |
+          zip -r ./prishas-precious-projectiles.zip module.json packs README.md LICENSE
       - name: Create versioned release
         id: create_versioned_release
         uses: ncipollo/release-action@v1
