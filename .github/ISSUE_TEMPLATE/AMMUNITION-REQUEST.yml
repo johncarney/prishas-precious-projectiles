@@ -1,7 +1,7 @@
 name:        Ammunition request
 description: File a specific precious material ammunition request.
 title:       "[ammo-request]: "
-labels:      ["enhancement", "data"]
+labels:      ["enhancement", "data", "ammo request"]
 body:
   - type: markdown
     attributes:
