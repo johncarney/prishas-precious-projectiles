@@ -1,0 +1,31 @@
+name:        Bug report
+description: File a bug report.
+title:       "[bug]: "
+labels:      ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Thanks for taking the time to report a problem. Please described the
+        issue in the fields below.
+  - type: textarea
+    id:   what-happened
+    attributes:
+      label:       The problem
+      description: What happened.
+    validations:
+      required: true
+  - type: textarea
+    id:   expectation
+    attributes:
+      label:       Your expectation
+      description: What you expected to happen.
+    validations:
+      required: false
+  - type: textarea
+    id:   steps-to-reproduce
+    attributes:
+      label:       Steps to reproduce
+      description: If there are steps to reproduce the problem, please list them here.
+    validations:
+      required: false
