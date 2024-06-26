@@ -1,0 +1,28 @@
+name:        Ammunition Request
+description: File a precious material ammunition request.
+title:       "[Ammo]: "
+labels:      ["enhancement", "data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the following form to request a specific precious
+        material ammunition type.
+  - type: input
+    id:   weapon-type
+    attributes:
+      label:       Weapon Type
+      description: The type of weapon you want precious material ammunition for.
+      placeholder: e.g. "Shortbow", "Repeating Heavy Crossbow", "Slide Pistol"
+    validations:
+      required: true
+  - type: dropdown
+    id:   material
+    attributes:
+      label:       Material
+      description: The precious material you want the ammunition to be made of.
+      options:
+        - Cold Iron
+        - Silver
+    validations:
+      required: true
