@@ -1,13 +1,14 @@
 name:        Ammunition Request
 description: File a precious material ammunition request.
-title:       "[Ammo]: "
+title:       "[ammo-request]: "
 labels:      ["enhancement", "data"]
 body:
   - type: markdown
     attributes:
-      value: |
+      value: >-
         Please fill out the following form to request a specific precious
-        material ammunition type.
+        material ammunition type. Note that we only support cold iron and silver
+        ammunition at this time.
   - type: input
     id:   weapon-type
     attributes:
