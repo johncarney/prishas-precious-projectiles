@@ -11,15 +11,13 @@ body:
   - type: textarea
     id:   what-happened
     attributes:
-      label:       The problem
-      description: What happened.
+      label: What happened
     validations:
       required: true
   - type: textarea
     id:   expectation
     attributes:
-      label:       Your expectation
-      description: What you expected to happen.
+      label: What you expected to happen
     validations:
       required: false
   - type: textarea
