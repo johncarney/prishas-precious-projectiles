@@ -4,6 +4,12 @@ A compendium of arrows, crossbow bolts, and other projectiles made from precious
 materials such as cold iron and silver. For use with the Pathfinder 2e system in
 Foundry VTT.
 
+Gamemasters, please read the [installation](#installation) instructions and
+[known issues](#known-issues) carefully.
+
+If you experience any problems with this module, or wish to request a specific
+ammunition type that we do not already have covered, please open an issue.
+
 ## Installation
 
 1. Open your Foundry VTT server's administration page.
@@ -34,6 +40,12 @@ enable the module's compendium pack. To do this:
 
 Currently *Prisha's Precious Projectiles* only has *cold iron* and *silver*
 ammunition.
+
+Some materials are not appropriate for ammunition, such as
+[*duskwood*](https://2e.aonprd.com/Equipment.aspx?ID=2858), which only reduces
+the bulk of an object and will have no effect on any type of ammunition. Other
+materials we need to evaluate and test in Foundry before supporting them. Others
+may require special handling beyond what we're currently doing.
 
 ### Firearms
 
