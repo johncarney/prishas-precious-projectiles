@@ -1,5 +1,5 @@
-name:        Ammunition Request
-description: File a precious material ammunition request.
+name:        Ammunition request
+description: File a specific precious material ammunition request.
 title:       "[ammo-request]: "
 labels:      ["enhancement", "data"]
 body:
@@ -27,3 +27,11 @@ body:
         - Silver
     validations:
       required: true
+  - type: input
+    id:   reference
+    attributes:
+      label:       Reference
+      description: A link to an authoritative reference for the weapon type. eg. Archives of Nethys.
+      placeholder: e.g. https://2e.aonprd.com/Weapons.aspx?ID=160
+    validations:
+      required: false
