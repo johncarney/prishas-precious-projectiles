@@ -1,7 +1,7 @@
 {
   "id": "prishas-precious-projectiles",
   "title": "Prisha's Precious Projectiles",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -37,5 +37,5 @@
   ],
   "url":      "https://github.com/johncarney/prishas-precious-projectiles",
   "manifest": "https://raw.githubusercontent.com/johncarney/prishas-precious-projectiles/main/module.json",
-  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/1.0.6/prishas-precious-projectiles.zip"
+  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/1.0.7/prishas-precious-projectiles.zip"
 }
