@@ -32,7 +32,8 @@ enable the module's compendium pack. To do this:
 
 ### Material types
 
-Currently *Prisha's Precious Projectiles* only has *cold iron* and *silver* ammunition.
+Currently *Prisha's Precious Projectiles* only has *cold iron* and *silver*
+ammunition.
 
 ### Firearms
 
@@ -42,12 +43,17 @@ want to take on right now. I did consider creating generic rounds that could be
 used with any firearm, but looking at rounds in the core compendium I notice
 that some are sold in boxes of 10, while others are sold in boxes of 5.
 
+See issue #7.
+
 ### Crossbow magazines
 
 Currently *Prisha's Precious Projectiles* only has one type of magazine for
 repeating crossbows. I think the intent is that you need a different type of
 magazine for each different type of repeating crossbow, but that would make for
-a lot of work for me. However, Foundry will not stop you from using Prisha's generic magazines on any type of repeating crossbow.
+a lot of work for me. However, Foundry will not stop you from using Prisha's
+generic magazines on any type of repeating crossbow.
+
+See issues #4 and #5.
 
 ### Compendium browser
 
@@ -55,13 +61,15 @@ The compendium pack in this module is not enabled in the Compendium Browser
 until you manually enable it. I am looking for a way to automate this so it is
 enabled when the module is activated.
 
+See issue #1.
+
 ### PF2e Ranged Combat
 
 If you roll damage for a ranged weapon using precious material ammunition from
 the actions tab on a character *without* having rolled a strike, you will get a
 warning from the
-[*PF2e Ranged Combat*](https://foundryvtt.com/packages/pf2e-ranged-combat/) module
-and the damage will not be tagged with the material's trait.
+[*PF2e Ranged Combat*](https://foundryvtt.com/packages/pf2e-ranged-combat/)
+module and the damage will not be tagged with the material's trait.
 
 This is highly unlikely to come up in actual play as rolling damage without a
 preceding strike is not common. If you do need to do this and want the
