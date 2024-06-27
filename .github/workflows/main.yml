@@ -15,14 +15,14 @@ jobs:
         run:  echo "CURRENT_VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_OUTPUT
       - name: Check current version
         id:   check-current-version
-        run:  echo ${{ steps.get-version.outputs.CURRENT_VERSION }}
+        run:  echo ${{ steps.get-current-version.outputs.CURRENT_VERSION }}
       - name: Get module version
         id:   get-module-version
         run:  echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
         # run:  echo "::set-output name=VERSION::$(python ./.github/workflows/get-version.py)"
       - name: Check module version
         id:   check-mpdule-version
-        run:  echo ${{ steps.get-version.outputs.VERSION }}
+        run:  echo ${{ steps.get-module-version.outputs.VERSION }}
       - name: Check branch
         id:   check-branch
         run:  echo ${{ github.ref_name }}
