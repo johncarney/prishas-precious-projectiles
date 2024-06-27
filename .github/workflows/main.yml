@@ -10,11 +10,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Get version
-        id:   get-version
-        run:  echo "::set-output name=VERSION::$(python ./.github/workflows/get-version.py)"
-      - name: Check version
-        id:   check-version
+      - name: Get current version
+        id:   get-current-version
+        run:  echo "CURRENT_VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_OUTPUT
+      - name: Check current version
+        id:   check-current-version
+        run:  echo ${{ steps.get-version.outputs.CURRENT_VERSION }}
+      - name: Get module version
+        id:   get-module-version
+        run:  echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
+        # run:  echo "::set-output name=VERSION::$(python ./.github/workflows/get-version.py)"
+      - name: Check module version
+        id:   check-mpdule-version
         run:  echo ${{ steps.get-version.outputs.VERSION }}
       - name: Check branch
         id:   check-branch
