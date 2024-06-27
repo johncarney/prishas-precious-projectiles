@@ -10,10 +10,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Get version
         id:   get-version
-        run:  echo "::set-output name=VERSION::$(node ./.github/workflows/get-version.js)"
+        run:  echo "::set-output name=VERSION::$(python ./.github/workflows/get-version.py)"
       - name: Check python version
         id:   check-python-version
-        run:  echo $(python --version)
+        run:  python ./.github/workflows/get-version.py
       # - name: Zip files
       #   run: |
       #     zip -r ./prishas-precious-projectiles.zip module.json packs README.md LICENSE
