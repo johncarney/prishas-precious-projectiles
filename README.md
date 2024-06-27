@@ -16,7 +16,7 @@ ammunition type that we do not already have covered, please open an issue.
 2. Go to the **Add-On Modules** tab.
 3. Click on **Install Module**.
 4. Paste the following URL into the **Manifest URL** field:<br>
-   `https://raw.githubusercontent.com/johncarney/prishas-precious-projectiles/main/module.json`
+   `https://github.com/johncarney/prishas-precious-projectiles/releases/latest/download/module.json`
 5. Click on **Install**.
 6. Now you can activate the module in any of your Pathfinder 2e game worlds.
 
