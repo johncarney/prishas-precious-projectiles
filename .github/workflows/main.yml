@@ -22,11 +22,11 @@ jobs:
       - name: Different version
         id:   different-version
         if:   ${{ steps.get-current-version.outputs.CURRENT_VERSION != steps.get-module-version.outputs.VERSION }}
-        run:  echo "Version mismatch: ${{ steps.get-current-version.outputs.CURRENT_VERSION }} != ${{ steps.get-module-version.outputs.VERSION }}"
+        run:  echo "Different versions"
       - name: Same version
         id:   same-version
         if:   ${{ steps.get-current-version.outputs.CURRENT_VERSION == steps.get-module-version.outputs.VERSION }}
-        run:  echo "Version mismatch: ${{ steps.get-current-version.outputs.CURRENT_VERSION }} == ${{ steps.get-module-version.outputs.VERSION }}"
+        run:  echo "Same versions"
 
       - name: Check branch
         id:   check-branch
