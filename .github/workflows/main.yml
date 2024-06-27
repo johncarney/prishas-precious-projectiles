@@ -2,7 +2,8 @@ name: Prisha's Precious Projectiles CI
 
 on:
   push:
-    branches: [main]
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
   build:
@@ -10,40 +11,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Update manifest
+        id:   update-manifest
+        run:  python ./.github/workflows/update-manifest.py ${{ github.ref_name }}
+      - name: Zip files
+        id:   zip-files
+        run: |
+          zip -r ./prishas-precious-projectiles.zip module.json packs README.md LICENSE
+      - name: Create release
+        id:   create-versioned-release
+        uses: ncipollo/release-action@v1
         with:
-          fetch-tags: true
-      - name: Get current version
-        id:   get-current-version
-        run:  echo "CURRENT_VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_OUTPUT
-      - name: Get module version
-        id:   get-module-version
-        run:  echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
-      - name: Different version
-        id:   different-version
-        if:   ${{ steps.get-current-version.outputs.CURRENT_VERSION != steps.get-module-version.outputs.VERSION }}
-        run:  echo "Different versions"
-      - name: Same version
-        id:   same-version
-        if:   ${{ steps.get-current-version.outputs.CURRENT_VERSION == steps.get-module-version.outputs.VERSION }}
-        run:  echo "Same versions"
-
-      - name: Check branch
-        id:   check-branch
-        run:  echo ${{ github.ref_name }}
-      - name: Check SHA
-        id:   check-sha
-        run:  echo ${{ github.sha }}
-      # - name: Zip files
-      #   run: |
-      #     zip -r ./prishas-precious-projectiles.zip module.json packs README.md LICENSE
-      # - name: Create release
-      #   id:   create-versioned-release
-      #   uses: ncipollo/release-action@v1
-      #   with:
-      #     allowUpdates: true # set to false if you do not want to allow updates on existing releases
-      #     name:         Release ${{ steps.get-version.outputs.VERSION }} # Use the version in the name
-      #     draft:        false
-      #     prerelease:   false
-      #     token:        ${{ secrets.GITHUB_TOKEN }}
-      #     artifacts:    "./module.json,./prishas-precious-projectiles.zip"
-      #     tag:          ${{ steps.get-version.outputs.VERSION }}
+          allowUpdates: false
+          name:         Release ${{ github.ref_name }}
+          draft:        false
+          prerelease:   false
+          token:        ${{ secrets.GITHUB_TOKEN }}
+          artifacts:    "./module.json,./prishas-precious-projectiles.zip"
