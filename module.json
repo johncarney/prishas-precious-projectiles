@@ -1,16 +1,16 @@
 {
-  "id": "prishas-precious-projectiles",
-  "title": "Prisha's Precious Projectiles",
+  "id":    "prishas-precious-projectiles",
+  "title": "PF2e Prisha's Precious Projectiles",
   "version": "1.0.12",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum":  "12",
+    "verified": "12.328"
   },
   "relationships": {
     "systems": [
       {
-        "id": "pf2e",
-        "type": "system",
+        "id":            "pf2e",
+        "type":          "system",
         "compatibility": {}
       }
     ]
@@ -32,7 +32,8 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "flags": {}
     }
   ],
   "url":      "https://github.com/johncarney/prishas-precious-projectiles",
