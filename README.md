@@ -24,12 +24,13 @@ of a weapon and has no effect on ammunition.
 - Blowgun darts
 - Crossbow bolts
 - Repeating crossbow magazines (see [note below](#repeating-crossbow-magazines))
+- Selected firearm ammunition types (see [note below](#firearm-ammunition))
 - Sling bullets
 
 ### Firearm ammunition
 
-Due to the plethora of ammunition types for firearms, I do not currently support
-them. If you have a specific need, please open an issue.
+Due to the plethora of ammunition types for firearms, I currently only support
+selected types. If you have a specific need, please open an issue.
 
 ### Repeating crossbow magazines
 
