@@ -64,24 +64,24 @@ damage from *abysium* is not automated so I won't be supporting it.
 
 Source: [Archives of Nethys](https://2e.aonprd.com/Equipment.aspx?Category=22&sort=name-asc&display=table&columns=pfs+source+rarity+trait+level+price+bulk+usage+spoilers).
 
-| Material          | Status        | Notes                                                                                                                              |
-|-------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Abysium]         | not planned   | Foundry does not automate the poison damage and it's not clear from the rules how the rune restriction should apply to ammunition. |
-| [Adamantine]      | investigating |                                                                                                                                    |
-| [Cold iron]       | supported     |                                                                                                                                    |
-| [Dawnsilver]      | investigating |                                                                                                                                    |
-| [Djezet]          | investigating |                                                                                                                                    |
-| [Duskwood]        | investigating |                                                                                                                                    |
-| [Inubrix]         | investigating |                                                                                                                                    |
-| [Keep stone]      | investigating |                                                                                                                                    |
-| [Noqual]          | investigating |                                                                                                                                    |
-| [Orichalcum]      | investigating |                                                                                                                                    |
-| [Peachwood]       | investigating |                                                                                                                                    |
-| [Siccatite]       | investigating |                                                                                                                                    |
-| [Silver]          | supported     |                                                                                                                                    |
-| [Sisterstone]     | not allowed   | The rules explicitly state that only melee weapons can be made from sisterstone.                                                   |
-| [Sovereign steel] | investigating |                                                                                                                                    |
-| [Warpglass]       | investigating |                                                                                                                                    |
+| Material          | Status        | Notes                                                                            |
+|-------------------|---------------|----------------------------------------------------------------------------------|
+| [Abysium]         | not planned   | Foundry does not automate either the poison damage or the rune restrictions.     |
+| [Adamantine]      | investigating |                                                                                  |
+| [Cold iron]       | supported     |                                                                                  |
+| [Dawnsilver]      | investigating |                                                                                  |
+| [Djezet]          | investigating |                                                                                  |
+| [Duskwood]        | investigating |                                                                                  |
+| [Inubrix]         | investigating |                                                                                  |
+| [Keep stone]      | investigating |                                                                                  |
+| [Noqual]          | investigating |                                                                                  |
+| [Orichalcum]      | investigating |                                                                                  |
+| [Peachwood]       | investigating |                                                                                  |
+| [Siccatite]       | investigating |                                                                                  |
+| [Silver]          | supported     |                                                                                  |
+| [Sisterstone]     | not allowed   | The rules explicitly state that only melee weapons can be made from sisterstone. |
+| [Sovereign steel] | investigating |                                                                                  |
+| [Warpglass]       | investigating |                                                                                  |
 
 [Abysium]:         https://2e.aonprd.com/Equipment.aspx?ID=1409
 [Adamantine]:      https://2e.aonprd.com/Equipment.aspx?ID=2855
