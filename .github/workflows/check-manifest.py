@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 
 
@@ -33,4 +35,7 @@ class Manifest:
 
 if __name__ == "__main__":
     manifest = Manifest("module.json")
-    print(manifest.version)
+    if manifest.download_version == manifest.version:
+        print(f"Download version matches manifest version: {manifest.version}")
+    else:
+        exit(f"Download version does not match manifest version: {manifest.download_version} != {manifest.version}")

@@ -8,14 +8,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Check manifest
+        id:   check-manifest
+        run:  python ./.github/workflows/check-manifest.py
       - name: Get version
         id:   get-version
         run:  echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
-      - name: Update manifest
-        id:   update-manifest
-        run:  python ./.github/workflows/update-manifest.py ${{ steps.get-version.outputs.VERSION }}
       - name: Zip files
         id:   zip-files
         run: |
