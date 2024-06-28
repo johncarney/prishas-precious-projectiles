@@ -20,7 +20,7 @@ I am looking into other materials and add as and when I can.
 - Arrows
 - Blowgun darts
 - Crossbow bolts
-- Repeating crossbow magazines (see [note below](#repeating-crossbow-magazines))
+- Repeating crossbow magazines
 - Selected firearm ammunition types (see [note below](#firearm-ammunition))
 - Sling bullets
 
@@ -28,14 +28,6 @@ I am looking into other materials and add as and when I can.
 
 Due to the plethora of ammunition types for firearms, I currently only support
 selected types. If you have a specific need, please open an issue.
-
-### Repeating crossbow magazines
-
-Repeating crossbow magazines currently do not work well with the
-[PF2e Ranged Combat](https://foundryvtt.com/packages/pf2e-ranged-combat/)
-module. The material trait will not be applied to the damage. You can work
-around this by turning off **Ammunition Effects** in the **Ranged Combat**
-module settings.
 
 ## Installation
 
