@@ -1,0 +1,23 @@
+.basic-grades: &basic-grades
+  Low-Grade:
+    level:          2
+    base_price:     40
+    price_per_bulk: 4
+  Standard-Grade:
+    level:          10
+    base_price:     880
+    price_per_bulk: 88
+  High-Grade:
+    level:          16
+    base_price:     9000
+    price_per_bulk: 900
+
+Cold Iron:
+  rarity:    common
+  reference: https://2e.aonprd.com/Equipment.aspx?ID=2856
+  grades:    *basic-grades
+
+Silver:
+  rarity:    common
+  reference: https://2e.aonprd.com/Equipment.aspx?ID=2860
+  grades:    *basic-grades
