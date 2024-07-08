@@ -1,2 +1,4 @@
 packs/prishas-precious-projectiles/LOG.old
 tmp/
+bin/__pycache__/
+.venv/
