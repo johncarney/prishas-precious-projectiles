@@ -7,7 +7,9 @@
     "build": "npm run clean && npm run copy-files",
     "build:watch": "nodemon",
     "clean": "rm -rf dist/*",
-    "copy-files": "cp -r src/* dist/ && cp module.json dist/"
+    "copy-files": "cp -r src/* dist/ && cp module.json dist/",
+    "server:init": "node scripts/server-init.mjs",
+    "server:cleanup": "node scripts/server-cleanup.mjs"
   },
   "keywords": [
     "foundry-vtt",

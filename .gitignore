@@ -1,6 +1,9 @@
 # Build output
 dist/
 
+# Foundry server data
+foundry-server/
+
 # Python virtual environment
 .venv/
 

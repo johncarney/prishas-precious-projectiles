@@ -1,11 +1,11 @@
 {
   "watch": ["src", "module.json"],
-  "ext": "json,yml,yaml,db,log",
   "ignore": [
     "src/packs/prishas-precious-projectiles/*.log",
     "dist/**/*",
     "node_modules/**/*"
   ],
   "exec": "npm run build",
+  "ext": "json,yml,yaml,db,log,mjs",
   "verbose": true
 }
