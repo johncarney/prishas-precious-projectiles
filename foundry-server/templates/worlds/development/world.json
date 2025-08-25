@@ -1,0 +1,15 @@
+{
+  "title":         "Development",
+  "id":            "development",
+  "system":        "pf2e",
+  "joinTheme":     "minimal",
+  "coreVersion":   "13.347",
+  "compatibility": {
+    "minimum":  "13",
+    "verified": "13"
+  },
+  "systemVersion": "7.4.2",
+  "lastPlayed":    "Mon Aug 25 2025 16:28:45 GMT-0600 (Mountain Daylight Time)",
+  "description":   "",
+  "flags":         {}
+}
