@@ -5,6 +5,7 @@
   "main": "module.json",
   "scripts": {
     "build": "npm run clean && npm run copy-files",
+    "build:watch": "nodemon",
     "clean": "rm -rf dist/*",
     "copy-files": "cp -r src/* dist/ && cp module.json dist/"
   },
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/johncarney/prishas-precious-projectiles/issues"
   },
-  "homepage": "https://github.com/johncarney/prishas-precious-projectiles#readme"
+  "homepage": "https://github.com/johncarney/prishas-precious-projectiles#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
