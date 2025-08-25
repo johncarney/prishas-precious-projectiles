@@ -2,7 +2,8 @@
 dist/
 
 # Foundry server data
-foundry-server/
+foundry-server/data
+foundry-server/app
 
 # Python virtual environment
 .venv/

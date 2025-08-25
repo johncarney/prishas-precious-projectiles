@@ -14,6 +14,29 @@ const SYSTEMS_DIR = path.join(SERVER_DATA_DIR, 'systems');
 const MODULE_DIR = path.join(SERVER_DATA_DIR, 'modules/prishas-precious-projectiles');
 const PROJECT_DIST_DIR = path.resolve('dist');
 
+function copyDirectorySync(source, target) {
+  // Create target directory if it doesn't exist
+  if (!fs.existsSync(target)) {
+    fs.mkdirSync(target, { recursive: true });
+  }
+
+  // Read source directory
+  const files = fs.readdirSync(source);
+
+  for (const file of files) {
+    const sourcePath = path.join(source, file);
+    const targetPath = path.join(target, file);
+
+    const stat = fs.statSync(sourcePath);
+
+    if (stat.isDirectory()) {
+      copyDirectorySync(sourcePath, targetPath);
+    } else {
+      fs.copyFileSync(sourcePath, targetPath);
+    }
+  }
+}
+
 async function getLatestPF2eRelease() {
   return new Promise((resolve, reject) => {
     https.get('https://api.github.com/repos/foundryvtt/pf2e/releases/latest', {
@@ -44,6 +67,19 @@ async function main() {
     fs.mkdirSync(SERVER_DATA_DIR, { recursive: true });
     fs.mkdirSync(SYSTEMS_DIR, { recursive: true });
     fs.mkdirSync(path.dirname(MODULE_DIR), { recursive: true });
+
+    // Copy world template to create a game world
+    console.log('🌍 Setting up game world...');
+    const worldTemplateDir = path.join(__dirname, '..', 'foundry-server', 'templates', 'worlds');
+    const worldDataDir = path.join(SERVER_DATA_DIR, 'worlds');
+
+    if (fs.existsSync(worldTemplateDir)) {
+      // Copy world template directory
+      copyDirectorySync(worldTemplateDir, worldDataDir);
+      console.log('✅ Game world created from template');
+    } else {
+      console.log('⚠️  World template directory not found, skipping world creation');
+    }
 
     // Get latest PF2e release
     console.log('🔍 Fetching latest PF2e system release...');
