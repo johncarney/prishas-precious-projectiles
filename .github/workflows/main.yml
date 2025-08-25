@@ -3,6 +3,8 @@ name: Prisha's Precious Projectiles CI
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
@@ -17,9 +19,6 @@ jobs:
       - name: Check manifest
         id:   check-manifest
         run:  python ./.github/workflows/check-manifest.py
-      - name: Get version
-        id:   get-version
-        run:  echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -28,12 +27,30 @@ jobs:
         run: npm ci
       - name: Build module
         run: npm run build
+      - name: Show dist contents
+        run: |
+          echo "Contents of dist directory:"
+          ls -la dist/
+          echo "Contents of dist/packs:"
+          ls -la dist/packs/
+      - name: Get version
+        id:   get-version
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
+            echo "Using version from module.json for main branch push"
+          else
+            echo "VERSION=${{ github.sha }}" >> $GITHUB_OUTPUT
+            echo "Using commit SHA for PR or non-main branch: ${{ github.sha }}"
+          fi
+          echo "Version: ${{ steps.get-version.outputs.VERSION }}"
       - name: Zip files
         id:   zip-files
         run: |
           cd dist && zip -r ../prishas-precious-projectiles.zip .
       - name: Create release
         id:   create-versioned-release
+        if:   github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: false
