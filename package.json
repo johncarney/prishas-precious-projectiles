@@ -4,10 +4,8 @@
   "description": "A Foundry VTT module for Pathfinder 2E providing precious material ammunition",
   "main": "module.json",
   "scripts": {
-    "build": "npm run clean && npm run copy-files",
+    "build": "node scripts/build.mjs",
     "build:watch": "nodemon",
-    "clean": "rm -rf dist/*",
-    "copy-files": "cp -R src/* dist/ && cp module.json README.md LICENSE dist/",
     "server:init": "node scripts/server-init.mjs",
     "server:cleanup": "node scripts/server-cleanup.mjs"
   },
