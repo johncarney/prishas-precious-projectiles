@@ -7,17 +7,17 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const SERVER_DATA_DIR = 'foundry-server';
+const SERVER_DATA_DIR = 'foundry-server/data';
 
 function main() {
-  console.log('🧹 Cleaning up Foundry server directory...\n');
+  console.log('🧹 Cleaning up Foundry server data directory...\n');
 
   try {
     if (fs.existsSync(SERVER_DATA_DIR)) {
       fs.rmSync(SERVER_DATA_DIR, { recursive: true, force: true });
-      console.log('✅ Foundry server directory removed successfully!');
+      console.log('✅ Foundry server data directory removed successfully!');
     } else {
-      console.log('ℹ️  Foundry server directory does not exist.');
+      console.log('ℹ️  Foundry server data directory does not exist.');
     }
   } catch (error) {
     console.error('❌ Error during cleanup:', error.message);
