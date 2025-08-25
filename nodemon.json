@@ -1,0 +1,11 @@
+{
+  "watch": ["src", "module.json"],
+  "ignore": [
+    "src/packs/prishas-precious-projectiles/*.log",
+    "dist/**/*",
+    "node_modules/**/*"
+  ],
+  "exec": "node scripts/build.mjs",
+  "ext": "json,yml,yaml,db,log,mjs",
+  "verbose": true
+}

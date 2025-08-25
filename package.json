@@ -1,0 +1,32 @@
+{
+  "name": "prishas-precious-projectiles",
+  "version": "1.1.2",
+  "description": "A Foundry VTT module for Pathfinder 2E providing precious material ammunition",
+  "main": "module.json",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:watch": "nodemon",
+    "server:init": "node scripts/server-init.mjs",
+    "server:cleanup": "node scripts/server-cleanup.mjs"
+  },
+  "keywords": [
+    "foundry-vtt",
+    "pathfinder-2e",
+    "module",
+    "ammunition",
+    "precious-materials"
+  ],
+  "author": "John Carney",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johncarney/prishas-precious-projectiles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johncarney/prishas-precious-projectiles/issues"
+  },
+  "homepage": "https://github.com/johncarney/prishas-precious-projectiles#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
