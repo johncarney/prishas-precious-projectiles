@@ -31,7 +31,7 @@ jobs:
       - name: Zip files
         id:   zip-files
         run: |
-          zip -r ./prishas-precious-projectiles.zip dist/module.json dist/packs README.md LICENSE
+          cd dist && zip -r ../prishas-precious-projectiles.zip .
       - name: Create release
         id:   create-versioned-release
         uses: ncipollo/release-action@v1
