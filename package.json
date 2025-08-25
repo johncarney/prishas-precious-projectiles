@@ -8,7 +8,8 @@
     "build:watch": "nodemon",
     "server:init": "node scripts/server-init.mjs",
     "server:cleanup": "node scripts/server-cleanup.mjs",
-    "server": "node scripts/server.mjs"
+    "server": "node scripts/server.mjs",
+    "version:bump": "node scripts/version-bump.mjs"
   },
   "keywords": [
     "foundry-vtt",
