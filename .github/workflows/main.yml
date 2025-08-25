@@ -3,8 +3,6 @@ name: Prisha's Precious Projectiles CI
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   build:
@@ -27,23 +25,10 @@ jobs:
         run: npm ci
       - name: Build module
         run: npm run build
-      - name: Show dist contents
-        run: |
-          echo "Contents of dist directory:"
-          ls -la dist/
-          echo "Contents of dist/packs:"
-          ls -la dist/packs/
       - name: Get version
         id:   get-version
         run: |
-          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/main" ]; then
-            echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
-            echo "Using version from module.json for main branch push"
-          else
-            echo "VERSION=${{ github.sha }}" >> $GITHUB_OUTPUT
-            echo "Using commit SHA for PR or non-main branch: ${{ github.sha }}"
-          fi
-          echo "Version: ${{ steps.get-version.outputs.VERSION }}"
+          echo "VERSION=$(python ./.github/workflows/get-version.py)" >> $GITHUB_OUTPUT
       - name: Zip files
         id:   zip-files
         run: |
