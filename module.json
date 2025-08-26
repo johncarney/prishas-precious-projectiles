@@ -1,7 +1,7 @@
 {
   "id": "prishas-precious-projectiles",
   "title": "PF2e Prisha's Precious Projectiles",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "compatibility": {
     "minimum": "12",
     "verified": "13.347"
@@ -25,6 +25,9 @@
       "flags": {}
     }
   ],
+  "esmodules": [
+    "module.js"
+  ],
   "packs": [
     {
       "name": "prishas-precious-projectiles",
@@ -36,10 +39,25 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "flags": {}
+      "flags": {
+        "pf2e": {
+          "compendiumBrowser": {
+            "category": "equipment",
+            "searchable": true
+          }
+        }
+      }
     }
   ],
+  "flags": {
+    "pf2e": {
+      "compendiumBrowser": {
+        "enabled": true,
+        "category": "equipment"
+      }
+    }
+  },
   "url": "https://github.com/johncarney/prishas-precious-projectiles",
   "manifest": "https://github.com/johncarney/prishas-precious-projectiles/releases/latest/download/module.json",
-  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/1.1.6/prishas-precious-projectiles.zip"
+  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/1.1.7/prishas-precious-projectiles.zip"
 }

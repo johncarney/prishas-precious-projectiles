@@ -1,11 +1,14 @@
 {
-  "watch": ["src", "module.json"],
-  "ignore": [
-    "src/packs/prishas-precious-projectiles/*.log",
-    "dist/**/*",
-    "node_modules/**/*"
+  "watch": [
+    "src/**/*",
+    "module.json"
   ],
-  "exec": "node scripts/build.mjs",
-  "ext": "json,yml,yaml,db,log,mjs",
+  "ignore": [
+    "dist/**/*",
+    "node_modules/**/*",
+    "foundry-server/**/*"
+  ],
+  "exec": "npm run build",
+  "ext": "ts,js,json,yml,yaml",
   "verbose": true
 }

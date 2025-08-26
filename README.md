@@ -33,19 +33,6 @@ selected types. If you have a specific need, please open an issue.
 
 You should install this module directly from the Foundry VTT package browser.
 
-Once installed, there is a manual step you should take to make the ammunition
-available in the Compendium Browser. This will make it easier for your players
-to purchase the ammunition. To do this follow these steps:
-
-1. Log in to your game world as a Gamemaster.
-2. Open up the Compendium Browser from a character sheet (go to the inventory
-   tab and click on any of the search icons).
-3. Click on **Settings**.
-4. Scroll down until you find _Prisha's Precious Projectiles_ under
-   **Equipment**.
-5. Check the corresponding checkbox.
-6. Click on **Save Changes** and close the Compendium Browser.
-
 ## Material types
 
 The following table lists the materials I am looking into and their status. Most
