@@ -3,10 +3,12 @@
     level:          2
     base_price:     40
     price_per_bulk: 4
+    limit:          up to 8th level
   Standard-Grade:
     level:          10
     base_price:     880
     price_per_bulk: 88
+    limit:          up to 15th level
   High-Grade:
     level:          16
     base_price:     9000
@@ -21,3 +23,17 @@ Silver:
   rarity:    common
   reference: https://2e.aonprd.com/Equipment.aspx?ID=2860
   grades:    *basic-grades
+
+Adamantine:
+  rarity:    uncommon
+  reference: https://2e.aonprd.com/Equipment.aspx?ID=2855
+  grades:
+    Standard-Grade:
+      level:          11
+      base_price:     1400
+      price_per_bulk: 140
+      limit:          up to 15th level
+    High-Grade:
+      level:          17
+      base_price:     13500
+      price_per_bulk: 1350
