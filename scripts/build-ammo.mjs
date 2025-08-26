@@ -125,9 +125,8 @@ function loadCompendiumData() {
 /**
  * Generate ammunition item JSON
  */
-function generateAmmunitionItem(ammunitionType, material, grade, outputPath) {
+function generateAmmunitionItem(ammunitionType, material, grade) {
   try {
-    logStep('Loading configuration data...');
     const { ammunitionTypes, weaponMaterials } = loadYamlData();
     const { folderMap, itemSlugMap } = loadCompendiumData();
 
@@ -319,24 +318,88 @@ function generateAmmunitionItem(ammunitionType, material, grade, outputPath) {
       }
     };
 
-    // Write the item to the output file
-    writeFileSync(outputPath, JSON.stringify(item, null, 2), 'utf8');
-
     if (isExisting) {
       logSuccess(`Reused existing ammunition item: ${name}`);
     } else {
       logSuccess(`Generated new ammunition item: ${name}`);
     }
-    logInfo(`Output file: ${outputPath}`);
     logInfo(`Item ID: ${itemId}`);
     if (folderId) {
       logInfo(`Folder: ${folderName} (${folderId})`);
     }
 
+    return { isExisting, itemId, name, item };
+
   } catch (error) {
     logError(`Failed to generate ammunition item: ${error.message}`);
-    process.exit(1);
+    throw error;
   }
+}
+
+/**
+ * Generate multiple ammunition items for all permutations
+ */
+function generateMultipleAmmunitionItems(ammunitionTypes, materials, grades, outputPath) {
+  logStep('Loading configuration data...');
+  const { ammunitionTypes: ammoConfigs, weaponMaterials } = loadYamlData();
+
+  // Validate all inputs first
+  for (const ammoType of ammunitionTypes) {
+    if (!ammoConfigs[ammoType]) {
+      throw new Error(`Unknown ammunition type: ${ammoType}`);
+    }
+  }
+
+  for (const material of materials) {
+    if (!weaponMaterials[material]) {
+      throw new Error(`Unknown material: ${material}`);
+    }
+  }
+
+  for (const material of materials) {
+    for (const grade of grades) {
+      if (!weaponMaterials[material].grades[grade]) {
+        throw new Error(`Unknown grade: ${grade} for material ${material}`);
+      }
+    }
+  }
+
+  let totalItems = 0;
+  let newItems = 0;
+  let reusedItems = 0;
+  const items = [];
+
+  // Generate items for each permutation
+  for (const ammoType of ammunitionTypes) {
+    for (const material of materials) {
+      for (const grade of grades) {
+        totalItems++;
+
+        try {
+          const result = generateAmmunitionItem(ammoType, material, grade);
+
+          if (result.isExisting) {
+            reusedItems++;
+          } else {
+            newItems++;
+          }
+
+          items.push(result.item);
+
+        } catch (error) {
+          logError(`Failed to generate ${material} ${ammoType} (${grade}): ${error.message}`);
+        }
+      }
+    }
+  }
+
+  // Write all items to the output file as an array
+  writeFileSync(outputPath, JSON.stringify(items, null, 2), 'utf8');
+
+  logSuccess(`Generated ${totalItems} ammunition items total:`);
+  logInfo(`  New items: ${newItems}`);
+  logInfo(`  Reused items: ${reusedItems}`);
+  logInfo(`  Output file: ${outputPath}`);
 }
 
 // Command line interface
@@ -344,12 +407,15 @@ function main() {
   const args = process.argv.slice(2);
 
   if (args.length !== 4) {
-    logError('Usage: node build-ammo.mjs <ammunition-type> <material> <grade> <output-file>');
+    logError('Usage: node build-ammo.mjs <ammunition-types> <materials> <grades> <output-file>');
     logInfo('');
-    logInfo('Examples:');
+    logInfo('Arguments can be comma-separated to generate multiple items:');
+    logInfo('  node build-ammo.mjs "Arrows,Crossbow Bolts" "Silver,Cold Iron" "High-Grade" ./output/ammunition.json');
+    logInfo('  node build-ammo.mjs "Arrows" "Silver,Adamantine" "Standard-Grade,High-Grade" ./output/ammunition.json');
+    logInfo('');
+    logInfo('Single item generation (still outputs as array):');
     logInfo('  node build-ammo.mjs "Arrows" "Silver" "High-Grade" ./output/silver-arrows.json');
     logInfo('  node build-ammo.mjs "Crossbow Bolts" "Cold Iron" "Standard-Grade" ./output/cold-iron-bolts.json');
-    logInfo('  node build-ammo.mjs "Flintlock Pistol Rounds" "Adamantine" "High-Grade" ./output/adamantine-rounds.json');
     logInfo('');
     logInfo('Available ammunition types:');
     logInfo('  Arrows, Blowgun Darts, Crossbow Bolts, Sling Bullets, etc.');
@@ -362,19 +428,38 @@ function main() {
     process.exit(1);
   }
 
-  const [ammunitionType, material, grade, outputPath] = args;
+  const [ammunitionTypesArg, materialsArg, gradesArg, outputPath] = args;
+
+  // Parse comma-separated values
+  const ammunitionTypes = ammunitionTypesArg.split(',').map(s => s.trim()).filter(s => s);
+  const materials = materialsArg.split(',').map(s => s.trim()).filter(s => s);
+  const grades = gradesArg.split(',').map(s => s.trim()).filter(s => s);
+
+  // Validate that we have at least one value for each
+  if (ammunitionTypes.length === 0) {
+    logError('No ammunition types specified');
+    process.exit(1);
+  }
+  if (materials.length === 0) {
+    logError('No materials specified');
+    process.exit(1);
+  }
+  if (grades.length === 0) {
+    logError('No grades specified');
+    process.exit(1);
+  }
 
   // Resolve relative paths
   const resolvedOutputPath = join(process.cwd(), outputPath);
 
   logStep('Ammunition Item Generator');
-  logInfo(`Ammunition Type: ${ammunitionType}`);
-  logInfo(`Material: ${material}`);
-  logInfo(`Grade: ${grade}`);
+  logInfo(`Ammunition Types: ${ammunitionTypes.join(', ')}`);
+  logInfo(`Materials: ${materials.join(', ')}`);
+  logInfo(`Grades: ${grades.join(', ')}`);
   logInfo(`Output: ${resolvedOutputPath}`);
   log('');
 
-  generateAmmunitionItem(ammunitionType, material, grade, resolvedOutputPath);
+  generateMultipleAmmunitionItems(ammunitionTypes, materials, grades, resolvedOutputPath);
 }
 
 // Run the script
