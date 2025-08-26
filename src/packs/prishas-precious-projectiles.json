@@ -10,7 +10,7 @@
     "color": null,
     "flags": {},
     "_stats": {
-      "compendiumSource": "Folder.Ka3psT8f0dwpjxty",
+      "compendiumSource": null,
       "duplicateSource": null,
       "coreVersion": "12.327",
       "systemId": "pf2e",
@@ -60,7 +60,7 @@
     "color": null,
     "flags": {},
     "_stats": {
-      "compendiumSource": "Folder.enVL0jAulImrc7IO",
+      "compendiumSource": null,
       "duplicateSource": null,
       "coreVersion": "12.327",
       "systemId": "pf2e",
@@ -85,7 +85,7 @@
     "color": null,
     "flags": {},
     "_stats": {
-      "compendiumSource": "Folder.uhbcq5mtjJrMWBwk",
+      "compendiumSource": null,
       "duplicateSource": null,
       "coreVersion": "12.327",
       "systemId": "pf2e",
@@ -110,7 +110,7 @@
     "color": null,
     "flags": {},
     "_stats": {
-      "compendiumSource": "Folder.v0Oc6x831HcT97so",
+      "compendiumSource": null,
       "duplicateSource": null,
       "coreVersion": "12.327",
       "systemId": "pf2e",
@@ -135,7 +135,7 @@
     "color": null,
     "flags": {},
     "_stats": {
-      "compendiumSource": "Folder.yRURkYxx8OXJt6Nl",
+      "compendiumSource": null,
       "duplicateSource": null,
       "coreVersion": "12.327",
       "systemId": "pf2e",
@@ -156,7 +156,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from low-grade silver so can be used with magic dueling pistols up to 8th level.</p>"
+        "value": "These are standard rounds for use with dueling pistols, but they are made from low-grade silver so can be used with magic dueling pistols up to 8th level."
       },
       "rules": [
         {
@@ -170,10 +170,6 @@
         }
       ],
       "slug": "silver-dueling-pistol-rounds-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -245,8 +241,7 @@
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "folder": "czVPod5r0RiEdvUL",
     "ownership": {
-      "default": 0,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -274,7 +269,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with high-grade silver so can be used with any magic blowgun.</span></p>"
+        "value": "These are a standard blowgun darts, but they are tipped with high-grade silver so can be used with any magic blowgun."
       },
       "rules": [
         {
@@ -288,15 +283,6 @@
         }
       ],
       "slug": "silver-blowgun-darts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -366,8 +352,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -395,7 +380,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard arrows, but the heads are made from low-grade silver so can be used with magic bows up to 8th level.</span></p>"
+        "value": "These are a standard arrows, but the heads are made from low-grade silver so can be used with magic bows up to 8th level."
       },
       "rules": [
         {
@@ -409,15 +394,6 @@
         }
       ],
       "slug": "silver-arrows-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -487,8 +463,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -516,7 +491,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level."
       },
       "rules": [
         {
@@ -530,15 +505,6 @@
         }
       ],
       "slug": "repeating-hand-crossbow-magazine-with-cold-iron-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -607,9 +573,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -637,7 +601,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade silver so can be used with magic repeating crossbows up to 8th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads are made from low-grade silver so can be used with magic repeating crossbows up to 8th level."
       },
       "rules": [
         {
@@ -651,15 +615,6 @@
         }
       ],
       "slug": "repeating-heavy-crossbow-magazine-with-silver-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -728,9 +683,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -758,7 +711,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard sling bullets, but they are made from low-grade silver so may be used with magic slings up to 8th level.</p>"
+        "value": "These are standard sling bullets, but they are made from low-grade silver so may be used with magic slings up to 8th level."
       },
       "rules": [
         {
@@ -772,15 +725,6 @@
         }
       ],
       "slug": "silver-sling-bullets-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -850,8 +794,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -879,7 +822,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade silver so can be used with any magic repeating crossbow.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads are made from high-grade silver so can be used with any magic repeating crossbow."
       },
       "rules": [
         {
@@ -893,15 +836,6 @@
         }
       ],
       "slug": "repeating-hand-crossbow-magazine-with-silver-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -970,9 +904,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1000,7 +932,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from standard-grade silver so can be used with magic crossbows up to 15th level.</span></p>"
+        "value": "These are a standard crossbow bolts, but the heads are made from standard-grade silver so can be used with magic crossbows up to 15th level."
       },
       "rules": [
         {
@@ -1014,15 +946,6 @@
         }
       ],
       "slug": "silver-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1092,8 +1015,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1121,7 +1043,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard arrows, but the heads are made from high-grade silver so can be used with any magic bow.</span></p>"
+        "value": "These are a standard arrows, but the heads are made from high-grade silver so can be used with any magic bow."
       },
       "rules": [
         {
@@ -1135,15 +1057,6 @@
         }
       ],
       "slug": "silver-arrows-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1213,8 +1126,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1241,7 +1153,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from low-grade cold iron so can be used with magic dueling pistols up to 8th level.</p>"
+        "value": "These are standard rounds for use with dueling pistols, but they are made from low-grade cold iron so can be used with magic dueling pistols up to 8th level."
       },
       "rules": [
         {
@@ -1255,10 +1167,6 @@
         }
       ],
       "slug": "cold-iron-dueling-pistol-rounds-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1330,8 +1238,7 @@
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "folder": "czVPod5r0RiEdvUL",
     "ownership": {
-      "default": 0,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1359,7 +1266,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade silver so can be used with any magic repeating crossbow.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads are made from high-grade silver so can be used with any magic repeating crossbow."
       },
       "rules": [
         {
@@ -1373,15 +1280,6 @@
         }
       ],
       "slug": "repeating-heavy-crossbow-magazine-with-silver-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1450,9 +1348,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1480,7 +1376,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from high-grade cold iron so can be used with any magic crossbow.</span></p>"
+        "value": "These are a standard crossbow bolts, but the heads are made from high-grade cold iron so can be used with any magic crossbow."
       },
       "rules": [
         {
@@ -1494,15 +1390,6 @@
         }
       ],
       "slug": "cold-iron-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1572,8 +1459,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1601,7 +1487,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard sling bullets, but they are made from standard-grade cold iron so may be used with magic slings up to 15th level.</p>"
+        "value": "These are standard sling bullets, but they are made from standard-grade cold iron so may be used with magic slings up to 15th level."
       },
       "rules": [
         {
@@ -1615,15 +1501,6 @@
         }
       ],
       "slug": "cold-iron-sling-bullets-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1693,8 +1570,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1722,7 +1598,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are a standard arrows, but the heads are made from high-grade cold iron so can be used with any magic bow.</p>"
+        "value": "These are a standard arrows, but the heads are made from high-grade cold iron so can be used with any magic bow."
       },
       "rules": [
         {
@@ -1736,15 +1612,6 @@
         }
       ],
       "slug": "cold-iron-arrows-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1814,8 +1681,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1843,7 +1709,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade cold iron so can be used with any magic repeating crossbow.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads are made from high-grade cold iron so can be used with any magic repeating crossbow."
       },
       "rules": [
         {
@@ -1857,15 +1723,6 @@
         }
       ],
       "slug": "repeating-heavy-crossbow-magazine-with-cold-iron-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -1934,9 +1791,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -1964,7 +1819,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level."
       },
       "rules": [
         {
@@ -1978,15 +1833,6 @@
         }
       ],
       "slug": "repeating-heavy-crossbow-magazine-with-silver-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2055,9 +1901,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2085,7 +1929,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade silver so can be used with magic repeating crossbows up to 8th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads are made from low-grade silver so can be used with magic repeating crossbows up to 8th level."
       },
       "rules": [
         {
@@ -2099,15 +1943,6 @@
         }
       ],
       "slug": "repeating-hand-crossbow-magazine-with-silver-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2176,9 +2011,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2206,7 +2039,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade silver so can be used with any magic repeating crossbow.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads are made from high-grade silver so can be used with any magic repeating crossbow."
       },
       "rules": [
         {
@@ -2220,15 +2053,6 @@
         }
       ],
       "slug": "repeating-crossbow-magazine-with-silver-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2297,9 +2121,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2327,7 +2149,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level."
       },
       "rules": [
         {
@@ -2341,15 +2163,6 @@
         }
       ],
       "slug": "repeating-heavy-crossbow-magazine-with-cold-iron-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2418,9 +2231,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2448,7 +2259,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with standard-grade cold iron so can be used with magic blowguns up to 15th level.</span></p>"
+        "value": "These are a standard blowgun darts, but they are tipped with standard-grade cold iron so can be used with magic blowguns up to 15th level."
       },
       "rules": [
         {
@@ -2462,15 +2273,6 @@
         }
       ],
       "slug": "cold-iron-blowgun-darts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2540,8 +2342,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2569,7 +2370,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from low-grade silver so can be used with magic crossbows up to 8th level.</span></p>"
+        "value": "These are a standard crossbow bolts, but the heads are made from low-grade silver so can be used with magic crossbows up to 8th level."
       },
       "rules": [
         {
@@ -2583,15 +2384,6 @@
         }
       ],
       "slug": "silver-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2661,8 +2453,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2690,7 +2481,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard sling bullets, but they are made from high-grade cold iron so may be used with any magic sling.</p>"
+        "value": "These are standard sling bullets, but they are made from high-grade cold iron so may be used with any magic sling."
       },
       "rules": [
         {
@@ -2704,15 +2495,6 @@
         }
       ],
       "slug": "cold-iron-sling-bullets-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2782,8 +2564,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2811,7 +2592,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level."
       },
       "rules": [
         {
@@ -2825,15 +2606,6 @@
         }
       ],
       "slug": "repeating-crossbow-magazine-with-cold-iron-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -2902,9 +2674,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -2931,7 +2701,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from standard-grade silver so can be used with magic dueling pistols up to 15th level.</p>"
+        "value": "These are standard rounds for use with dueling pistols, but they are made from standard-grade silver so can be used with magic dueling pistols up to 15th level."
       },
       "rules": [
         {
@@ -2945,10 +2715,6 @@
         }
       ],
       "slug": "silver-dueling-pistol-rounds-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3020,8 +2786,7 @@
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "folder": "czVPod5r0RiEdvUL",
     "ownership": {
-      "default": 0,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3049,7 +2814,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are a standard arrows, but the heads are made from standard-grade cold iron so can be used with magic bows up to 15th level.</p>"
+        "value": "These are a standard arrows, but the heads are made from standard-grade cold iron so can be used with magic bows up to 15th level."
       },
       "rules": [
         {
@@ -3063,15 +2828,6 @@
         }
       ],
       "slug": "cold-iron-arrows-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3141,8 +2897,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3170,7 +2925,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade silver so can be used with magic repeating crossbows up to 8th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads are made from low-grade silver so can be used with magic repeating crossbows up to 8th level."
       },
       "rules": [
         {
@@ -3184,15 +2939,6 @@
         }
       ],
       "slug": "repeating-crossbow-magazine-with-silver-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3261,9 +3007,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3291,7 +3035,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade cold iron so can be used with any magic repeating crossbow.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads are made from high-grade cold iron so can be used with any magic repeating crossbow."
       },
       "rules": [
         {
@@ -3305,15 +3049,6 @@
         }
       ],
       "slug": "repeating-crossbow-magazine-with-cold-iron-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3382,9 +3117,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3412,7 +3145,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard sling bullets, but they are made from low-grade cold iron so may be used with magic slings up to 8th level.</p>"
+        "value": "These are standard sling bullets, but they are made from low-grade cold iron so may be used with magic slings up to 8th level."
       },
       "rules": [
         {
@@ -3426,15 +3159,6 @@
         }
       ],
       "slug": "cold-iron-sling-bullets-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3504,8 +3228,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3533,7 +3256,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are a standard arrows, but the heads are made from low-grade cold iron so can be used with magic bows up to 8th level.</p>"
+        "value": "These are a standard arrows, but the heads are made from low-grade cold iron so can be used with magic bows up to 8th level."
       },
       "rules": [
         {
@@ -3546,16 +3269,7 @@
           ]
         }
       ],
-      "slug": "cold-iron-arrow-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
+      "slug": "cold-iron-arrows-low-grade",
       "traits": {
         "otherTags": [],
         "value": [
@@ -3625,8 +3339,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3654,7 +3367,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with low-grade silver so can be used with magic blowguns up to 8th level.</span></p>"
+        "value": "These are a standard blowgun darts, but they are tipped with low-grade silver so can be used with magic blowguns up to 8th level."
       },
       "rules": [
         {
@@ -3668,15 +3381,6 @@
         }
       ],
       "slug": "silver-blowgun-darts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3746,8 +3450,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3775,7 +3478,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level."
       },
       "rules": [
         {
@@ -3789,15 +3492,6 @@
         }
       ],
       "slug": "repeating-hand-crossbow-magazine-with-silver-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3866,9 +3560,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -3896,7 +3588,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard sling bullets, but they are made from standard-grade silver so may be used with magic slings up to 15th level.</p>"
+        "value": "These are standard sling bullets, but they are made from standard-grade silver so may be used with magic slings up to 15th level."
       },
       "rules": [
         {
@@ -3910,15 +3602,6 @@
         }
       ],
       "slug": "silver-sling-bullets-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -3988,8 +3671,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4017,7 +3699,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from high-grade silver so can be used with any magic crossbow.</span></p>"
+        "value": "These are a standard crossbow bolts, but the heads are made from high-grade silver so can be used with any magic crossbow."
       },
       "rules": [
         {
@@ -4031,15 +3713,6 @@
         }
       ],
       "slug": "silver-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4109,8 +3782,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4138,7 +3810,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level."
       },
       "rules": [
         {
@@ -4152,15 +3824,6 @@
         }
       ],
       "slug": "repeating-hand-crossbow-magazine-with-cold-iron-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4229,9 +3892,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4259,7 +3920,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from standard-grade cold iron so can be used with magic crossbows up to 15th level.</span></p>"
+        "value": "These are a standard crossbow bolts, but the heads are made from standard-grade cold iron so can be used with magic crossbows up to 15th level."
       },
       "rules": [
         {
@@ -4273,15 +3934,6 @@
         }
       ],
       "slug": "cold-iron-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4351,8 +4003,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4380,7 +4031,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with low-grade cold iron so can be used with magic blowguns up to 8th level.</span></p>"
+        "value": "These are a standard blowgun darts, but they are tipped with low-grade cold iron so can be used with magic blowguns up to 8th level."
       },
       "rules": [
         {
@@ -4394,15 +4045,6 @@
         }
       ],
       "slug": "cold-iron-blowgun-darts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4472,8 +4114,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4501,7 +4142,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from low-grade cold iron so can be used with magic crossbows up to 8th level.</span></p>"
+        "value": "These are a standard crossbow bolts, but the heads are made from low-grade cold iron so can be used with magic crossbows up to 8th level."
       },
       "rules": [
         {
@@ -4515,15 +4156,6 @@
         }
       ],
       "slug": "cold-iron-bolts-low-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4593,8 +4225,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4621,7 +4252,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from standard-grade cold iron so can be used with magic dueling pistols up to 15th level.</p>"
+        "value": "These are standard rounds for use with dueling pistols, but they are made from standard-grade cold iron so can be used with magic dueling pistols up to 15th level."
       },
       "rules": [
         {
@@ -4635,10 +4266,6 @@
         }
       ],
       "slug": "cold-iron-dueling-pistol-rounds-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4710,8 +4337,7 @@
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "folder": "czVPod5r0RiEdvUL",
     "ownership": {
-      "default": 0,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4739,7 +4365,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level."
       },
       "rules": [
         {
@@ -4753,15 +4379,6 @@
         }
       ],
       "slug": "repeating-crossbow-magazine-with-cold-iron-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4830,9 +4447,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4860,7 +4475,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard sling bullets, but they are made from high-grade silver so may be used with any magic sling.</p>"
+        "value": "These are standard sling bullets, but they are made from high-grade silver so may be used with any magic sling."
       },
       "rules": [
         {
@@ -4874,15 +4489,6 @@
         }
       ],
       "slug": "silver-sling-bullets-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -4952,8 +4558,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -4981,7 +4586,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard arrows, but the heads are made from standard-grade silver so can be used with magic bows up to 15th level.</span></p>"
+        "value": "These are a standard arrows, but the heads are made from standard-grade silver so can be used with magic bows up to 15th level."
       },
       "rules": [
         {
@@ -4995,15 +4600,6 @@
         }
       ],
       "slug": "silver-arrows-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5073,8 +4669,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -5101,7 +4696,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from high-grade silver so can be used with any magic dueling pistols.</p>"
+        "value": "These are standard rounds for use with dueling pistols, but they are made from high-grade silver so can be used with any magic dueling pistols."
       },
       "rules": [
         {
@@ -5115,10 +4710,6 @@
         }
       ],
       "slug": "silver-dueling-pistol-rounds-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5190,8 +4781,7 @@
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "folder": "czVPod5r0RiEdvUL",
     "ownership": {
-      "default": 0,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -5219,7 +4809,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level."
       },
       "rules": [
         {
@@ -5233,15 +4823,6 @@
         }
       ],
       "slug": "repeating-crossbow-magazine-with-silver-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5310,9 +4891,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -5339,7 +4918,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from high-grade cold iron so can be used with any magic dueling pistols.</p>"
+        "value": "These are standard rounds for use with dueling pistols, but they are made from high-grade cold iron so can be used with any magic dueling pistols."
       },
       "rules": [
         {
@@ -5353,10 +4932,6 @@
         }
       ],
       "slug": "cold-iron-dueling-pistol-rounds-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5428,8 +5003,7 @@
     "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
     "folder": "czVPod5r0RiEdvUL",
     "ownership": {
-      "default": 0,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -5457,7 +5031,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level."
       },
       "rules": [
         {
@@ -5471,15 +5045,6 @@
         }
       ],
       "slug": "repeating-heavy-crossbow-magazine-with-cold-iron-bolts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5548,9 +5113,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -5578,7 +5141,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with standard-grade silver so can be used with magic blowguns up to 15th level.</span></p>"
+        "value": "These are a standard blowgun darts, but they are tipped with standard-grade silver so can be used with magic blowguns up to 15th level."
       },
       "rules": [
         {
@@ -5592,15 +5155,6 @@
         }
       ],
       "slug": "silver-blowgun-darts-standard-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5670,8 +5224,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -5699,7 +5252,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade cold iron so can be used with any magic repeating crossbow.</span></p>"
+        "value": "This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads are made from high-grade cold iron so can be used with any magic repeating crossbow."
       },
       "rules": [
         {
@@ -5713,15 +5266,6 @@
         }
       ],
       "slug": "repeating-hand-crossbow-magazine-with-cold-iron-bolts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5790,9 +5334,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3,
-      "Nu9OdgAwrJ7pLyfY": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
@@ -5820,7 +5362,7 @@
     "system": {
       "description": {
         "gm": "",
-        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with high-grade cold iron so can be used with any magic blowgun.</span></p>"
+        "value": "These are a standard blowgun darts, but they are tipped with high-grade cold iron so can be used with any magic blowgun."
       },
       "rules": [
         {
@@ -5834,15 +5376,6 @@
         }
       ],
       "slug": "cold-iron-blowgun-darts-high-grade",
-      "_migration": {
-        "version": 0.931,
-        "lastMigration": null,
-        "previous": {
-          "schema": 0.93,
-          "foundry": "12.327",
-          "system": "6.0.3"
-        }
-      },
       "traits": {
         "otherTags": [],
         "value": [
@@ -5912,8 +5445,7 @@
     },
     "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
     "ownership": {
-      "default": 0,
-      "b97vGEvEx3xmtaRD": 3
+      "default": 0
     },
     "flags": {},
     "_stats": {
