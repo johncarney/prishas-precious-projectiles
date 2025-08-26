@@ -15,7 +15,8 @@
     "ts:watch": "tsc --watch",
     "minify": "terser dist/module.js -o dist/module.js --compress --mangle",
     "dev": "npm run ts:build && npm run build",
-    "compendium:extract": "node scripts/extract-compendium.mjs"
+    "compendium:extract": "node scripts/extract-compendium.mjs",
+    "compendium:pack": "node scripts/pack-compendium.mjs"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",
