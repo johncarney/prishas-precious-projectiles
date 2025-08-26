@@ -1,105 +1,154 @@
 #!/usr/bin/env node
 
-import fs from 'fs';
-import path from 'path';
 import { execSync } from 'child_process';
+import { rmSync, mkdirSync, copyFileSync, readdirSync, statSync } from 'fs';
+import { join } from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = join(__filename, '..');
 
-const SRC_DIR = 'src';
-const DIST_DIR = 'dist';
+// Colors for console output
+const colors = {
+  reset: '\x1b[0m',
+  bright: '\x1b[1m',
+  red: '\x1b[31m',
+  green: '\x1b[32m',
+  yellow: '\x1b[33m',
+  blue: '\x1b[34m',
+  magenta: '\x1b[35m',
+  cyan: '\x1b[36m'
+};
 
-function copyFileSync(source, target) {
-  const targetFile = target;
-
-  // Ensure target directory exists
-  const targetDir = path.dirname(targetFile);
-  if (!fs.existsSync(targetDir)) {
-    fs.mkdirSync(targetDir, { recursive: true });
-  }
-
-  fs.copyFileSync(source, targetFile);
+function log(message, color = colors.reset) {
+  console.log(`${color}${message}${colors.reset}`);
 }
 
-function copyDirectorySync(source, target) {
-  // Create target directory if it doesn't exist
-  if (!fs.existsSync(target)) {
-    fs.mkdirSync(target, { recursive: true });
-  }
-
-  // Read source directory
-  const files = fs.readdirSync(source);
-
-  for (const file of files) {
-    const sourcePath = path.join(source, file);
-    const targetPath = path.join(target, file);
-
-    const stat = fs.statSync(sourcePath);
-
-    if (stat.isDirectory()) {
-      copyDirectorySync(sourcePath, targetPath);
-    } else {
-      copyFileSync(sourcePath, targetPath);
-    }
-  }
+function logStep(message) {
+  log(`📋 ${message}`, colors.blue);
 }
 
-function main() {
-  console.log('🧹 Cleaning dist directory...');
+function logSuccess(message) {
+  log(`✅ ${message}`, colors.green);
+}
 
-  // Clean dist directory
-  if (fs.existsSync(DIST_DIR)) {
-    fs.rmSync(DIST_DIR, { recursive: true, force: true });
-  }
-  fs.mkdirSync(DIST_DIR, { recursive: true });
+function logError(message) {
+  log(`❌ ${message}`, colors.red);
+}
 
-  console.log('📁 Copying files from src to dist...');
+function logInfo(message) {
+  log(`ℹ️  ${message}`, colors.cyan);
+}
 
-  // Copy all files from src to dist
-  if (fs.existsSync(SRC_DIR)) {
-    copyDirectorySync(SRC_DIR, DIST_DIR);
-  }
+async function build() {
+  try {
+    logStep('Starting build process...');
 
-  console.log('📄 Copying additional files...');
-
-  // Copy additional files from root
-  const additionalFiles = ['module.json', 'README.md', 'LICENSE'];
-
-  for (const file of additionalFiles) {
-    if (fs.existsSync(file)) {
-      copyFileSync(file, path.join(DIST_DIR, file));
-      console.log(`  ✅ Copied ${file}`);
-    } else {
-      console.log(`  ⚠️  File not found: ${file}`);
+    // Step 1: Clean dist directory
+    logStep('Cleaning dist directory...');
+    const distPath = join(__dirname, '..', 'dist');
+    if (statSync(distPath, { throwIfNoEntry: false })) {
+      rmSync(distPath, { recursive: true, force: true });
     }
-  }
+    mkdirSync(distPath, { recursive: true });
+    logSuccess('Dist directory cleaned');
 
-  console.log('\n📋 Build complete! Contents of dist directory:');
+    // Step 2: Compile TypeScript
+    logStep('Compiling TypeScript...');
+    try {
+      execSync('npx tsc', { stdio: 'inherit', cwd: join(__dirname, '..') });
+      logSuccess('TypeScript compilation completed');
+    } catch (error) {
+      logError('TypeScript compilation failed');
+      throw error;
+    }
 
-  // Show contents for debugging
-  const distContents = fs.readdirSync(DIST_DIR);
-  for (const item of distContents) {
-    const itemPath = path.join(DIST_DIR, item);
-    const stat = fs.statSync(itemPath);
-    const type = stat.isDirectory() ? '📁' : '📄';
-    console.log(`  ${type} ${item}`);
+    // Step 3: Minify the compiled JavaScript
+    logStep('Minifying JavaScript...');
+    try {
+      const modulePath = join(distPath, 'module.js');
+      execSync(`npx terser "${modulePath}" -o "${modulePath}" --compress --mangle`, {
+        stdio: 'inherit',
+        cwd: join(__dirname, '..')
+      });
+      logSuccess('JavaScript minification completed');
+    } catch (error) {
+      logError('JavaScript minification failed');
+      throw error;
+    }
 
-    // If it's a directory, show its contents
-    if (stat.isDirectory()) {
-      try {
-        const subContents = fs.readdirSync(itemPath);
-        for (const subItem of subContents) {
-          console.log(`    📄 ${subItem}`);
-        }
-      } catch (err) {
-        console.log(`    ⚠️  Error reading directory: ${err.message}`);
+    // Step 4: Copy additional files
+    logStep('Copying additional files...');
+    const rootDir = join(__dirname, '..');
+    const filesToCopy = ['module.json', 'README.md', 'LICENSE'];
+
+    for (const file of filesToCopy) {
+      const sourcePath = join(rootDir, file);
+      const destPath = join(distPath, file);
+
+      if (statSync(sourcePath, { throwIfNoEntry: false })) {
+        copyFileSync(sourcePath, destPath);
+        logSuccess(`Copied ${file}`);
+      } else {
+        logInfo(`Skipped ${file} (not found)`);
       }
     }
-  }
 
-  console.log('\n✅ Build completed successfully!');
+    // Step 5: Copy packs directory
+    logStep('Copying packs directory...');
+    const srcPacksPath = join(rootDir, 'src', 'packs');
+    const distPacksPath = join(distPath, 'packs');
+
+    if (statSync(srcPacksPath, { throwIfNoEntry: false })) {
+      // Create packs directory
+      mkdirSync(distPacksPath, { recursive: true });
+
+      // Copy all files and subdirectories
+      const copyRecursive = (src, dest) => {
+        const entries = readdirSync(src, { withFileTypes: true });
+
+        for (const entry of entries) {
+          const srcPath = join(src, entry.name);
+          const destPath = join(dest, entry.name);
+
+          if (entry.isDirectory()) {
+            mkdirSync(destPath, { recursive: true });
+            copyRecursive(srcPath, destPath);
+          } else {
+            copyFileSync(srcPath, destPath);
+          }
+        }
+      };
+
+      copyRecursive(srcPacksPath, distPacksPath);
+      logSuccess('Packs directory copied');
+    } else {
+      logInfo('No packs directory found in src');
+    }
+
+    // Step 6: Display build summary
+    logStep('Build complete! Contents of dist directory:');
+    const displayDirectoryContents = (dir, indent = '  ') => {
+      const entries = readdirSync(dir, { withFileTypes: true });
+
+      for (const entry of entries) {
+        const icon = entry.isDirectory() ? '📁' : '📄';
+        log(`${indent}${icon} ${entry.name}`);
+
+        if (entry.isDirectory()) {
+          displayDirectoryContents(join(dir, entry.name), indent + '  ');
+        }
+      }
+    };
+
+    displayDirectoryContents(distPath);
+
+    logSuccess('Build completed successfully!');
+
+  } catch (error) {
+    logError(`Build failed: ${error.message}`);
+    process.exit(1);
+  }
 }
 
-main();
+build();
