@@ -1,0 +1,5936 @@
+[
+  {
+    "name": "Bolts",
+    "sorting": "a",
+    "folder": null,
+    "type": "Item",
+    "_id": "Ka3psT8f0dwpjxty",
+    "description": "",
+    "sort": 100000,
+    "color": null,
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Folder.Ka3psT8f0dwpjxty",
+      "duplicateSource": null,
+      "coreVersion": "12.327",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293357055,
+      "modifiedTime": 1719293357055,
+      "lastModifiedBy": "b97vGEvEx3xmtaRD"
+    },
+    "_metadata": {
+      "key": "!folders!Ka3psT8f0dwpjxty",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "name": "Rounds",
+    "sorting": "a",
+    "folder": null,
+    "type": "Item",
+    "_id": "czVPod5r0RiEdvUL",
+    "description": "",
+    "sort": 0,
+    "color": null,
+    "flags": {},
+    "_stats": {
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "coreVersion": "12.327",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719413068711,
+      "modifiedTime": 1719413068711,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_metadata": {
+      "key": "!folders!czVPod5r0RiEdvUL",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "name": "Blowgun Darts",
+    "sorting": "a",
+    "folder": null,
+    "type": "Item",
+    "_id": "enVL0jAulImrc7IO",
+    "description": "",
+    "sort": 100000,
+    "color": null,
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Folder.enVL0jAulImrc7IO",
+      "duplicateSource": null,
+      "coreVersion": "12.327",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293352627,
+      "modifiedTime": 1719293352627,
+      "lastModifiedBy": "b97vGEvEx3xmtaRD"
+    },
+    "_metadata": {
+      "key": "!folders!enVL0jAulImrc7IO",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "name": "Sling Bullets",
+    "sorting": "a",
+    "folder": null,
+    "type": "Item",
+    "_id": "uhbcq5mtjJrMWBwk",
+    "description": "",
+    "sort": 100000,
+    "color": null,
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Folder.uhbcq5mtjJrMWBwk",
+      "duplicateSource": null,
+      "coreVersion": "12.327",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293369616,
+      "modifiedTime": 1719293369616,
+      "lastModifiedBy": "b97vGEvEx3xmtaRD"
+    },
+    "_metadata": {
+      "key": "!folders!uhbcq5mtjJrMWBwk",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "name": "Arrows",
+    "sorting": "a",
+    "folder": null,
+    "type": "Item",
+    "_id": "v0Oc6x831HcT97so",
+    "description": "",
+    "sort": 100000,
+    "color": null,
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Folder.v0Oc6x831HcT97so",
+      "duplicateSource": null,
+      "coreVersion": "12.327",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293330335,
+      "modifiedTime": 1719293330335,
+      "lastModifiedBy": "b97vGEvEx3xmtaRD"
+    },
+    "_metadata": {
+      "key": "!folders!v0Oc6x831HcT97so",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "name": "Magazines",
+    "sorting": "a",
+    "folder": null,
+    "type": "Item",
+    "_id": "yRURkYxx8OXJt6Nl",
+    "description": "",
+    "sort": 100000,
+    "color": null,
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Folder.yRURkYxx8OXJt6Nl",
+      "duplicateSource": null,
+      "coreVersion": "12.327",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293365089,
+      "modifiedTime": 1719293365089,
+      "lastModifiedBy": "b97vGEvEx3xmtaRD"
+    },
+    "_metadata": {
+      "key": "!folders!yRURkYxx8OXJt6Nl",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "name": "Silver Dueling Pistol Rounds (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from low-grade silver so can be used with magic dueling pistols up to 8th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-dueling-pistol-rounds-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "alchemical",
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "rounds10",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "folder": "czVPod5r0RiEdvUL",
+    "ownership": {
+      "default": 0,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.00UXv1ihi7k0aSby",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719415334267,
+      "modifiedTime": 1719576389139,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "00UXv1ihi7k0aSby",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!00UXv1ihi7k0aSby",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "enVL0jAulImrc7IO",
+    "name": "Silver Blowgun Darts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with high-grade silver so can be used with any magic blowgun.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-blowgun-darts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "blowgunDarts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.0E0Dycbr7CQePD5N",
+      "duplicateSource": "Item.eMguDhI5LhK42cmE",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293352823,
+      "modifiedTime": 1719576850557,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "0E0Dycbr7CQePD5N",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!0E0Dycbr7CQePD5N",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "v0Oc6x831HcT97so",
+    "name": "Silver Arrows (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard arrows, but the heads are made from low-grade silver so can be used with magic bows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-arrows-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "arrows",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.0gwznitKxeXcpWvl",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293330547,
+      "modifiedTime": 1719576796826,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "0gwznitKxeXcpWvl",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!0gwznitKxeXcpWvl",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Hand Crossbow Magazine with Cold Iron Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-hand-crossbow-magazine-with-cold-iron-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.1986zFLpMemO7cnm",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719566412298,
+      "modifiedTime": 1719576670631,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "1986zFLpMemO7cnm",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!1986zFLpMemO7cnm",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Heavy Crossbow Magazine with Silver Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade silver so can be used with magic repeating crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-heavy-crossbow-magazine-with-silver-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projecti;es",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.1QBn4G3W6vJirzGF",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719567778597,
+      "modifiedTime": 1719576721390,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "1QBn4G3W6vJirzGF",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!1QBn4G3W6vJirzGF",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "uhbcq5mtjJrMWBwk",
+    "name": "Silver Sling Bullets (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard sling bullets, but they are made from low-grade silver so may be used with magic slings up to 8th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-sling-bullets-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "slingBullets",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.3CyjAmLToikkrJJR",
+      "duplicateSource": "Item.OnPlxgii9LGZHH8h",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293369813,
+      "modifiedTime": 1719576972122,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "3CyjAmLToikkrJJR",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!3CyjAmLToikkrJJR",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Hand Crossbow Magazine with Silver Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade silver so can be used with any magic repeating crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-hand-crossbow-magazine-with-silver-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.89T0eLalZNOw7uoW",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719566414420,
+      "modifiedTime": 1719576676614,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "89T0eLalZNOw7uoW",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!89T0eLalZNOw7uoW",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "Ka3psT8f0dwpjxty",
+    "name": "Silver Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from standard-grade silver so can be used with magic crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "bolts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.8MasNaKZQyyftCA0",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293357251,
+      "modifiedTime": 1719576883384,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "8MasNaKZQyyftCA0",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!8MasNaKZQyyftCA0",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "v0Oc6x831HcT97so",
+    "name": "Silver Arrows (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard arrows, but the heads are made from high-grade silver so can be used with any magic bow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-arrows-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "arrows",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.8WojgjeQRiuAw2LD",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293330547,
+      "modifiedTime": 1719576803755,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "8WojgjeQRiuAw2LD",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!8WojgjeQRiuAw2LD",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "name": "Cold Iron Dueling Pistol Rounds (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from low-grade cold iron so can be used with magic dueling pistols up to 8th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-dueling-pistol-rounds-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "alchemical",
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "rounds10",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "folder": "czVPod5r0RiEdvUL",
+    "ownership": {
+      "default": 0,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.8heIPunCX65ld144",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719413211672,
+      "modifiedTime": 1719576399015,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "8heIPunCX65ld144",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!8heIPunCX65ld144",
+      "extractedAt": "2025-08-26T17:47:49.632Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Heavy Crossbow Magazine with Silver Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade silver so can be used with any magic repeating crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-heavy-crossbow-magazine-with-silver-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.9jgXW5gQ5XtfkXNJ",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719567776663,
+      "modifiedTime": 1719576755042,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "9jgXW5gQ5XtfkXNJ",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!9jgXW5gQ5XtfkXNJ",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "Ka3psT8f0dwpjxty",
+    "name": "Cold Iron Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from high-grade cold iron so can be used with any magic crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "bolts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.9pCdjTMSfBp0fWhz",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293357251,
+      "modifiedTime": 1719576913150,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "9pCdjTMSfBp0fWhz",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!9pCdjTMSfBp0fWhz",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "uhbcq5mtjJrMWBwk",
+    "name": "Cold Iron Sling Bullets (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard sling bullets, but they are made from standard-grade cold iron so may be used with magic slings up to 15th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-sling-bullets-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "slingBullets",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.BxpaSnkFmFzOKXAQ",
+      "duplicateSource": "Item.V8W3M6mdoat97jWQ",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293369813,
+      "modifiedTime": 1719576983069,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "BxpaSnkFmFzOKXAQ",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!BxpaSnkFmFzOKXAQ",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "v0Oc6x831HcT97so",
+    "name": "Cold Iron Arrows (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are a standard arrows, but the heads are made from high-grade cold iron so can be used with any magic bow.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-arrows-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "arrows",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.EehemKorudn1lduQ",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293330547,
+      "modifiedTime": 1719576822504,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "EehemKorudn1lduQ",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!EehemKorudn1lduQ",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Heavy Crossbow Magazine with Cold Iron Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade cold iron so can be used with any magic repeating crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-heavy-crossbow-magazine-with-cold-iron-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.Hvjw27cQePZ9voCW",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719567769342,
+      "modifiedTime": 1719576762564,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "Hvjw27cQePZ9voCW",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!Hvjw27cQePZ9voCW",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Heavy Crossbow Magazine with Silver Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-heavy-crossbow-magazine-with-silver-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projecti;es",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.I0iUXbfeGpt9b1Pa",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719567780726,
+      "modifiedTime": 1719576737194,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "I0iUXbfeGpt9b1Pa",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!I0iUXbfeGpt9b1Pa",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Hand Crossbow Magazine with Silver Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade silver so can be used with magic repeating crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-hand-crossbow-magazine-with-silver-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projecti;es",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.KddkmtPO0nuLzPHO",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719566416523,
+      "modifiedTime": 1719576645154,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "KddkmtPO0nuLzPHO",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!KddkmtPO0nuLzPHO",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Crossbow Magazine with Silver Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade silver so can be used with any magic repeating crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-crossbow-magazine-with-silver-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.Kw4nPmFPPsY0SZW5",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719565924446,
+      "modifiedTime": 1719576618853,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "Kw4nPmFPPsY0SZW5",
+    "sort": 500000,
+    "_metadata": {
+      "key": "!items!Kw4nPmFPPsY0SZW5",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Heavy Crossbow Magazine with Cold Iron Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-heavy-crossbow-magazine-with-cold-iron-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.LQ2sVYZUoIOG4URa",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719567771769,
+      "modifiedTime": 1719576727259,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "LQ2sVYZUoIOG4URa",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!LQ2sVYZUoIOG4URa",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "enVL0jAulImrc7IO",
+    "name": "Cold Iron Blowgun Darts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with standard-grade cold iron so can be used with magic blowguns up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-blowgun-darts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "blowgunDarts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.ObKd22SQA9g7ibOg",
+      "duplicateSource": "Item.A0t9NmCJnF58EVit",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293352823,
+      "modifiedTime": 1719576857600,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "ObKd22SQA9g7ibOg",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!ObKd22SQA9g7ibOg",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "Ka3psT8f0dwpjxty",
+    "name": "Silver Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from low-grade silver so can be used with magic crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "bolts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.PUtD3NmH7Wz3EJbD",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293357251,
+      "modifiedTime": 1719576889174,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "PUtD3NmH7Wz3EJbD",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!PUtD3NmH7Wz3EJbD",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "uhbcq5mtjJrMWBwk",
+    "name": "Cold Iron Sling Bullets (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard sling bullets, but they are made from high-grade cold iron so may be used with any magic sling.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-sling-bullets-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "slingBullets",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.Qn1QCbDellRPpKcR",
+      "duplicateSource": "Item.laZ60363zufNHoqJ",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293369813,
+      "modifiedTime": 1719576994536,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "Qn1QCbDellRPpKcR",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!Qn1QCbDellRPpKcR",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Crossbow Magazine with Cold Iron Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-crossbow-magazine-with-cold-iron-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.T92mNkB5NVjS968Y",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719565919767,
+      "modifiedTime": 1719576598598,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "T92mNkB5NVjS968Y",
+    "sort": 200000,
+    "_metadata": {
+      "key": "!items!T92mNkB5NVjS968Y",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "name": "Silver Dueling Pistol Rounds (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from standard-grade silver so can be used with magic dueling pistols up to 15th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-dueling-pistol-rounds-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "alchemical",
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "rounds10",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "folder": "czVPod5r0RiEdvUL",
+    "ownership": {
+      "default": 0,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.UbdJutRipVKwSuaK",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719415336256,
+      "modifiedTime": 1719576408507,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "UbdJutRipVKwSuaK",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!UbdJutRipVKwSuaK",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "v0Oc6x831HcT97so",
+    "name": "Cold Iron Arrows (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are a standard arrows, but the heads are made from standard-grade cold iron so can be used with magic bows up to 15th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-arrows-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "arrows",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.UnJOsFRDyfwg2GWW",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293330547,
+      "modifiedTime": 1719576809479,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "UnJOsFRDyfwg2GWW",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!UnJOsFRDyfwg2GWW",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Crossbow Magazine with Silver Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade silver so can be used with magic repeating crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-crossbow-magazine-with-silver-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projecti;es",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.V56pV6gZys1YOwdM",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719565927015,
+      "modifiedTime": 1719576592671,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "V56pV6gZys1YOwdM",
+    "sort": 600000,
+    "_metadata": {
+      "key": "!items!V56pV6gZys1YOwdM",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Crossbow Magazine with Cold Iron Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade cold iron so can be used with any magic repeating crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-crossbow-magazine-with-cold-iron-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.XjQcSqGJ2p5RhcuP",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719565916754,
+      "modifiedTime": 1719577006380,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "XjQcSqGJ2p5RhcuP",
+    "sort": 100000,
+    "_metadata": {
+      "key": "!items!XjQcSqGJ2p5RhcuP",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "uhbcq5mtjJrMWBwk",
+    "name": "Cold Iron Sling Bullets (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard sling bullets, but they are made from low-grade cold iron so may be used with magic slings up to 8th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-sling-bullets-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "slingBullets",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.YFS9PWYuyn9pqMZj",
+      "duplicateSource": "Item.XVhdjHotGOcN9ZU8",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293369813,
+      "modifiedTime": 1719576988502,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "YFS9PWYuyn9pqMZj",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!YFS9PWYuyn9pqMZj",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "v0Oc6x831HcT97so",
+    "name": "Cold Iron Arrows (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are a standard arrows, but the heads are made from low-grade cold iron so can be used with magic bows up to 8th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-arrow-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "arrows",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.YRr4f0G4pQcPGUEc",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293330547,
+      "modifiedTime": 1719576816175,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "YRr4f0G4pQcPGUEc",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!YRr4f0G4pQcPGUEc",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "enVL0jAulImrc7IO",
+    "name": "Silver Blowgun Darts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with low-grade silver so can be used with magic blowguns up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-blowgun-darts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "blowgunDarts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.YUY3IDQn4AkyNIvE",
+      "duplicateSource": "Item.JaJrcSdjJ8WDAE7Y",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293352823,
+      "modifiedTime": 1719576844763,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "YUY3IDQn4AkyNIvE",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!YUY3IDQn4AkyNIvE",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Hand Crossbow Magazine with Silver Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-hand-crossbow-magazine-with-silver-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projecti;es",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.ZikIfvWLStKckl9s",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719566419452,
+      "modifiedTime": 1719576698618,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "ZikIfvWLStKckl9s",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!ZikIfvWLStKckl9s",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "uhbcq5mtjJrMWBwk",
+    "name": "Silver Sling Bullets (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard sling bullets, but they are made from standard-grade silver so may be used with magic slings up to 15th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-sling-bullets-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "slingBullets",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.aD05X26zVU9e9oHG",
+      "duplicateSource": "Item.qSm38wKYeQp69trT",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293369813,
+      "modifiedTime": 1719576967317,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "aD05X26zVU9e9oHG",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!aD05X26zVU9e9oHG",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "Ka3psT8f0dwpjxty",
+    "name": "Silver Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from high-grade silver so can be used with any magic crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "bolts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.bGeI7icCWYRMTf2x",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293357251,
+      "modifiedTime": 1719576895347,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "bGeI7icCWYRMTf2x",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!bGeI7icCWYRMTf2x",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Hand Crossbow Magazine with Cold Iron Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from low-grade cold iron so can be used with magic repeating crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-hand-crossbow-magazine-with-cold-iron-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.bR3Y2Rbq7aeBI3Ea",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719566409816,
+      "modifiedTime": 1719576650701,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "bR3Y2Rbq7aeBI3Ea",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!bR3Y2Rbq7aeBI3Ea",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "Ka3psT8f0dwpjxty",
+    "name": "Cold Iron Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from standard-grade cold iron so can be used with magic crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "bolts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.c11nsENdGNx9kAOz",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293357251,
+      "modifiedTime": 1719576901201,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "c11nsENdGNx9kAOz",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!c11nsENdGNx9kAOz",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "enVL0jAulImrc7IO",
+    "name": "Cold Iron Blowgun Darts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with low-grade cold iron so can be used with magic blowguns up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-blowgun-darts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "blowgunDarts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.cK4rODErfuW5ogL5",
+      "duplicateSource": "Item.50VToORjKDhnBE8Q",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293352823,
+      "modifiedTime": 1719576862873,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "cK4rODErfuW5ogL5",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!cK4rODErfuW5ogL5",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "Ka3psT8f0dwpjxty",
+    "name": "Cold Iron Bolts (Low-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard crossbow bolts, but the heads are made from low-grade cold iron so can be used with magic crossbows up to 8th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-bolts-low-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 2
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 40
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "bolts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.gezCPlINqrF2zKbc",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293357251,
+      "modifiedTime": 1719576906464,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "gezCPlINqrF2zKbc",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!gezCPlINqrF2zKbc",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "name": "Cold Iron Dueling Pistol Rounds (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from standard-grade cold iron so can be used with magic dueling pistols up to 15th level.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-dueling-pistol-rounds-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "alchemical",
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "rounds10",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "folder": "czVPod5r0RiEdvUL",
+    "ownership": {
+      "default": 0,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.ggCLznWHTgxdHgJb",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719414096860,
+      "modifiedTime": 1719576415891,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "ggCLznWHTgxdHgJb",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!ggCLznWHTgxdHgJb",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Crossbow Magazine with Cold Iron Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-crossbow-magazine-with-cold-iron-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.hihtHN4mLVtKnZKL",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719565922100,
+      "modifiedTime": 1719576613121,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "hihtHN4mLVtKnZKL",
+    "sort": 400000,
+    "_metadata": {
+      "key": "!items!hihtHN4mLVtKnZKL",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "uhbcq5mtjJrMWBwk",
+    "name": "Silver Sling Bullets (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard sling bullets, but they are made from high-grade silver so may be used with any magic sling.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-sling-bullets-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "slingBullets",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.hjbddGDv3Wtwj8pg",
+      "duplicateSource": "Item.jbENQGyZ9ZPJdGZ3",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293369813,
+      "modifiedTime": 1719576978455,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "hjbddGDv3Wtwj8pg",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!hjbddGDv3Wtwj8pg",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "v0Oc6x831HcT97so",
+    "name": "Silver Arrows (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard arrows, but the heads are made from standard-grade silver so can be used with magic bows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-arrows-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "arrows",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.ip06a6JFTrPci9Jn",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293330547,
+      "modifiedTime": 1719576788458,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "ip06a6JFTrPci9Jn",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!ip06a6JFTrPci9Jn",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "name": "Silver Dueling Pistol Rounds (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from high-grade silver so can be used with any magic dueling pistols.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-dueling-pistol-rounds-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "alchemical",
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "rounds10",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "folder": "czVPod5r0RiEdvUL",
+    "ownership": {
+      "default": 0,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.lEd1JkGoH48zMsJZ",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719415338615,
+      "modifiedTime": 1719576422691,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "lEd1JkGoH48zMsJZ",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!lEd1JkGoH48zMsJZ",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Crossbow Magazine with Silver Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade silver so can be used with magic repeating crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-crossbow-magazine-with-silver-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projecti;es",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.qITRBquaUdkN0reR",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719565936614,
+      "modifiedTime": 1719576606925,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "qITRBquaUdkN0reR",
+    "sort": 700000,
+    "_metadata": {
+      "key": "!items!qITRBquaUdkN0reR",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "name": "Cold Iron Dueling Pistol Rounds (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>These are standard rounds for use with dueling pistols, but they are made from high-grade cold iron so can be used with any magic dueling pistols.</p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-dueling-pistol-rounds-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "alchemical",
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "rounds10",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
+    "folder": "czVPod5r0RiEdvUL",
+    "ownership": {
+      "default": 0,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.u09qeYa3YFbxTuLs",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719414099271,
+      "modifiedTime": 1719576428789,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "u09qeYa3YFbxTuLs",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!u09qeYa3YFbxTuLs",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Heavy Crossbow Magazine with Cold Iron Bolts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating heavy crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from standard-grade cold iron so can be used with magic repeating crossbows up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-heavy-crossbow-magazine-with-cold-iron-bolts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.uUz1BkBdqvBRwcWB",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719567774008,
+      "modifiedTime": 1719576747298,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "uUz1BkBdqvBRwcWB",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!uUz1BkBdqvBRwcWB",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "enVL0jAulImrc7IO",
+    "name": "Silver Blowgun Darts (Standard-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with standard-grade silver so can be used with magic blowguns up to 15th level.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "silver",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "silver-blowgun-darts-standard-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 10
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 880
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "blowgunDarts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.wJhlVog9Xt7OQSNK",
+      "duplicateSource": "Item.hEeYVtKa0ADGrwAO",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293352823,
+      "modifiedTime": 1719576840294,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "wJhlVog9Xt7OQSNK",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!wJhlVog9Xt7OQSNK",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "yRURkYxx8OXJt6Nl",
+    "name": "Repeating Hand Crossbow Magazine with Cold Iron Bolts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p>This is a standard magazine of 5 bolts for use with repeating hand crossbows, but the heads<span style=\"font-family:Roboto, sans-serif\"> are made from high-grade cold iron so can be used with any magic repeating crossbow.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "repeating-hand-crossbow-magazine-with-cold-iron-bolts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "uncommon"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 1,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        }
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 5,
+        "max": 5,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3,
+      "Nu9OdgAwrJ7pLyfY": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.ykKadGkaqrskScQI",
+      "duplicateSource": null,
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719566407448,
+      "modifiedTime": 1719576682405,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "ykKadGkaqrskScQI",
+    "sort": 300000,
+    "_metadata": {
+      "key": "!items!ykKadGkaqrskScQI",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  },
+  {
+    "folder": "enVL0jAulImrc7IO",
+    "name": "Cold Iron Blowgun Darts (High-Grade)",
+    "type": "consumable",
+    "effects": [],
+    "system": {
+      "description": {
+        "gm": "",
+        "value": "<p><span style=\"font-family:Roboto, sans-serif\">These are a standard blowgun darts, but they are tipped with high-grade cold iron so can be used with any magic blowgun.</span></p>"
+      },
+      "rules": [
+        {
+          "key": "AdjustStrike",
+          "mode": "add",
+          "property": "materials",
+          "value": "cold-iron",
+          "definition": [
+            "item:id:{item|id}"
+          ]
+        }
+      ],
+      "slug": "cold-iron-blowgun-darts-high-grade",
+      "_migration": {
+        "version": 0.931,
+        "lastMigration": null,
+        "previous": {
+          "schema": 0.93,
+          "foundry": "12.327",
+          "system": "6.0.3"
+        }
+      },
+      "traits": {
+        "otherTags": [],
+        "value": [
+          "consumable"
+        ],
+        "rarity": "common"
+      },
+      "publication": {
+        "title": "Prisha's Precious Projectiles",
+        "authors": "John Carney",
+        "license": "OGL",
+        "remaster": true
+      },
+      "level": {
+        "value": 16
+      },
+      "quantity": 10,
+      "baseItem": null,
+      "bulk": {
+        "value": 0.1
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "hardness": 0,
+      "price": {
+        "value": {
+          "gp": 9000
+        },
+        "per": 10
+      },
+      "equipped": {
+        "carryType": "worn"
+      },
+      "containerId": null,
+      "size": "med",
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "identification": {
+        "status": "identified",
+        "unidentified": {
+          "name": "Unusual Object",
+          "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+          "data": {
+            "description": {
+              "value": ""
+            }
+          }
+        },
+        "misidentified": {}
+      },
+      "category": "ammo",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": "blowgunDarts",
+      "spell": null
+    },
+    "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
+    "ownership": {
+      "default": 0,
+      "b97vGEvEx3xmtaRD": 3
+    },
+    "flags": {},
+    "_stats": {
+      "compendiumSource": "Compendium.prishas-precious-projectiles.prishas-precious-projectiles.Item.zEiw4XbMm7ggH6Pa",
+      "duplicateSource": "Item.hLqME9WCcMRKyR2X",
+      "coreVersion": "12.328",
+      "systemId": "pf2e",
+      "systemVersion": "6.0.4",
+      "createdTime": 1719293352823,
+      "modifiedTime": 1719576868134,
+      "lastModifiedBy": "Nu9OdgAwrJ7pLyfY"
+    },
+    "_id": "zEiw4XbMm7ggH6Pa",
+    "sort": 0,
+    "_metadata": {
+      "key": "!items!zEiw4XbMm7ggH6Pa",
+      "extractedAt": "2025-08-26T17:47:49.633Z"
+    }
+  }
+]

@@ -4,6 +4,7 @@ import { execSync } from 'child_process';
 import { rmSync, mkdirSync, copyFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 import { fileURLToPath } from 'url';
+import { packLevelDB } from './pack-compendium.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = join(__filename, '..');
@@ -94,36 +95,21 @@ async function build() {
       }
     }
 
-    // Step 5: Copy packs directory
-    logStep('Copying packs directory...');
-    const srcPacksPath = join(rootDir, 'src', 'packs');
+    // Step 5: Pack JSON source into LevelDB
+    logStep('Packing compendium from JSON source...');
+    const srcJsonPath = join(rootDir, 'src', 'packs', 'prishas-precious-projectiles.json');
     const distPacksPath = join(distPath, 'packs');
+    const distCompendiumPath = join(distPacksPath, 'prishas-precious-projectiles');
 
-    if (statSync(srcPacksPath, { throwIfNoEntry: false })) {
+    if (statSync(srcJsonPath, { throwIfNoEntry: false })) {
       // Create packs directory
       mkdirSync(distPacksPath, { recursive: true });
 
-      // Copy all files and subdirectories
-      const copyRecursive = (src, dest) => {
-        const entries = readdirSync(src, { withFileTypes: true });
-
-        for (const entry of entries) {
-          const srcPath = join(src, entry.name);
-          const destPath = join(dest, entry.name);
-
-          if (entry.isDirectory()) {
-            mkdirSync(destPath, { recursive: true });
-            copyRecursive(srcPath, destPath);
-          } else {
-            copyFileSync(srcPath, destPath);
-          }
-        }
-      };
-
-      copyRecursive(srcPacksPath, distPacksPath);
-      logSuccess('Packs directory copied');
+      // Pack the JSON source into LevelDB
+      await packLevelDB(srcJsonPath, distCompendiumPath);
+      logSuccess('Compendium packed from JSON source');
     } else {
-      logInfo('No packs directory found in src');
+      logInfo('No JSON source found for compendium packing');
     }
 
     // Step 6: Display build summary
