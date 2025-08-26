@@ -66,12 +66,16 @@ async function packLevelDB(jsonPath, dbPath) {
     const jsonContent = readFileSync(jsonPath, 'utf8');
     const data = JSON.parse(jsonContent);
 
-    // Validate the structure
-    if (!data.records || !Array.isArray(data.records)) {
-      throw new Error('JSON file must contain a "records" array');
+    // Validate the structure - expect either an array directly or an object with records array
+    let records;
+    if (Array.isArray(data)) {
+      records = data;
+    } else if (data.records && Array.isArray(data.records)) {
+      records = data.records;
+    } else {
+      throw new Error('JSON file must contain an array of records or an object with a "records" array');
     }
 
-    const records = data.records;
     logInfo(`Found ${records.length} records to pack`);
 
     // Create database directory if it doesn't exist
@@ -182,7 +186,7 @@ function main() {
     logInfo('  node pack-compendium.mjs ./analysis/equipment.json ./foundry-server/data/Data/packs/custom-equipment');
     logInfo('');
     logInfo('The script will:');
-    logInfo('  1. Read records from the specified JSON file');
+    logInfo('  1. Read records from the specified JSON file (array or object with records array)');
     logInfo('  2. Pack all records into a LevelDB database');
     logInfo('  3. Create the database directory if it doesn\'t exist');
     logInfo('  4. Use existing keys from metadata or generate new ones');

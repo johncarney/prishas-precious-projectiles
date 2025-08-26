@@ -135,23 +135,9 @@ async function extractLevelDB(dbPath, outputPath) {
       logInfo(`Created output directory: ${outputDir}`);
     }
 
-    // Prepare the output data
-    const outputData = {
-      metadata: {
-        dbPath: dbPath,
-        extractionDate: new Date().toISOString(),
-        totalKeys: totalKeys,
-        totalRecords: records.length,
-        errors: errors.length,
-        source: 'LevelDB'
-      },
-      records: records,
-      errors: errors
-    };
-
-    // Write the output file
+    // Write the records array directly
     logStep('Writing output file...');
-    writeFileSync(outputPath, JSON.stringify(outputData, null, 2), 'utf8');
+    writeFileSync(outputPath, JSON.stringify(records, null, 2), 'utf8');
 
     logSuccess(`Extraction completed successfully!`);
     logInfo(`Output file: ${outputPath}`);
@@ -159,7 +145,7 @@ async function extractLevelDB(dbPath, outputPath) {
 
     if (errors.length > 0) {
       logWarning(`${errors.length} errors encountered during extraction`);
-      logInfo('Check the output file for error details');
+      logInfo('Check the console output for error details');
     }
 
     // Display some statistics
@@ -219,8 +205,8 @@ function main() {
     logInfo('');
     logInfo('The script will:');
     logInfo('  1. Open the LevelDB database from the specified path');
-    logInfo('  2. Extract all records and metadata');
-    logInfo('  3. Save everything to the output JSON file');
+    logInfo('  2. Extract all records into a JSON array');
+    logInfo('  3. Save the array to the output JSON file');
     logInfo('  4. Create the output directory if it doesn\'t exist');
     process.exit(1);
   }
