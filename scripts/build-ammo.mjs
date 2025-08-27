@@ -3,12 +3,28 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { fileURLToPath } from 'url';
+import { randomBytes } from 'crypto';
 import jsyaml from 'js-yaml';
-import { v4 as uuidv4 } from 'uuid';
-import uuid62 from 'uuid62';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = join(__filename, '..');
+
+/**
+ * Generate a random alphanumeric string ID like Foundry VTT does
+ * @param {number} length - The length of the random string (default: 16)
+ * @returns {string} A string containing random letters (A-Z, a-z) and numbers (0-9)
+ */
+function generateFoundryId(length = 16) {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const bytes = randomBytes(length);
+  let result = '';
+
+  for (let i = 0; i < length; i++) {
+    result += chars[bytes[i] % chars.length];
+  }
+
+  return result;
+}
 
 // Colors for console output
 const colors = {
@@ -96,8 +112,7 @@ function loadYamlData() {
  * Generate a new folder record
  */
 function generateFolder(folderName) {
-  const uuid = uuidv4();
-  const folderId = uuid62.encode(uuid);
+  const folderId = generateFoundryId();
   const now = Date.now();
 
   const folder = {
@@ -226,10 +241,9 @@ function generateAmmunitionItem(ammunitionType, material, grade, folderMap, item
       isExisting = true;
       logWarning(`Found existing item with slug "${slug}", reusing UUID: ${itemId}`);
     } else {
-      // Generate new UUID and base62 encoded ID
-      const uuid = uuidv4();
-      itemId = uuid62.encode(uuid);
-      logInfo(`Generated new UUID for slug "${slug}": ${itemId}`);
+      // Generate new Foundry-style ID
+      itemId = generateFoundryId();
+      logInfo(`Generated new ID for slug "${slug}": ${itemId}`);
     }
 
     // Look up folder UUID
