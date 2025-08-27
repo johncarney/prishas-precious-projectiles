@@ -1,22 +1,19 @@
 # PF2e Prisha's Precious Projectiles
 
-A compendium of arrows, crossbow bolts, and other projectiles made from precious
-materials such as cold iron and silver. For use with the Pathfinder 2e system in
-Foundry VTT.
+A compendium of arrows, crossbow bolts, and other projectiles made from precious materials such as cold iron and silver. For use with the Pathfinder 2e system in Foundry VTT.
 
-Gamemasters, please read the [installation](#installation) instructions and the
-other notes below carefully.
-
-If you experience any problems with this module, or wish to request a specific
-ammunition type that we do not already have covered, please open an issue.
+If you experience any problems with this module, or wish to request a specific ammunition type that we do not already have covered, please open an issue.
 
 ## Supported materials
+
+- Adamantine
 - Cold iron
 - Silver
 
 I am looking into other materials and add as and when I can.
 
 ## Supported ammunition types
+
 - Arrows
 - Blowgun darts
 - Crossbow bolts
@@ -26,25 +23,16 @@ I am looking into other materials and add as and when I can.
 
 ### Firearm ammunition
 
-Due to the plethora of ammunition types for firearms, I currently only support
-selected types. If you have a specific need, please open an issue.
-
-## Installation
-
-You should install this module directly from the Foundry VTT package browser.
+Due to the plethora of ammunition types for firearms, I currently only support selected types. If you have a specific need, please open an issue.
 
 ## Material types
 
-The following table lists the materials I am looking into and their status. Most
-precious materials here have special rules. If those rules are not currently
-automated in Foundry, I will not be supporting them. On the one hand, *cold
-iron* and *silver* are well-supported by the system. On the other hand, poison
-damage from *abysium* is not automated so I won't be supporting it.
+The following table lists the materials I am looking into and their status. Most precious materials here have special rules. If those rules are not currently automated in Foundry, I will not be supporting them. For example, *cold iron* and *silver* are well-supported by the system so I support them in this module. By contrast, poison damage from *abysium* is not automated so I won't be supporting it.
 
 | Material          | Status        | Notes                                                                        |
 |-------------------|---------------|------------------------------------------------------------------------------|
 | [Abysium]         | not planned   | Foundry does not automate either the poison damage or the rune restrictions. |
-| [Adamantine]      | investigating |                                                                              |
+| [Adamantine]      | suppported    |                                                                              |
 | [Cold iron]       | supported     |                                                                              |
 | [Dawnsilver]      | investigating |                                                                              |
 | [Djezet]          | investigating |                                                                              |
