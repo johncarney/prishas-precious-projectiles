@@ -5,6 +5,7 @@ import { join } from 'path';
 import { fileURLToPath } from 'url';
 import { randomBytes } from 'crypto';
 import jsyaml from 'js-yaml';
+import lodash from 'lodash';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = join(__filename, '..');
@@ -92,6 +93,8 @@ function cleanWhitespace(text) {
     .replace(/\s+/g, ' ') // Fold multiple whitespace into single space
     .trim();
 }
+
+
 
 /**
  * Load and parse YAML files
@@ -187,6 +190,8 @@ function loadExistingOutput(outputPath) {
     if (!Array.isArray(data)) {
       throw new Error(`Output file does not contain an array: ${outputPath}`);
     }
+
+
 
     return data;
   } catch (error) {
@@ -480,24 +485,68 @@ function generateAndMergeAmmunition(ammunitionTypes, materials, grades, outputPa
         try {
           const result = generateAmmunitionItem(ammoType, material, grade, folderMap, itemSlugMap, compendiumData, newFolders);
 
-          // Check if this item already exists in the output file
-          if (existingItemMap.has(result.item.system.slug)) {
-            // Update existing item
-            const existingItem = existingItemMap.get(result.item.system.slug);
+                      // Check if this item already exists in the output file
+            if (existingItemMap.has(result.item.system.slug)) {
+              // Get existing item
+              const existingItem = existingItemMap.get(result.item.system.slug);
 
-            // Preserve the createdTime from the existing item
-            const existingCreatedTime = existingItem._stats?.createdTime;
+              // Record the timestamps from existing and new items
+              const existingCreatedTime = existingItem._stats?.createdTime;
+              const newModifiedTime = result.item._stats?.modifiedTime;
 
-            Object.assign(existingItem, result.item);
+              // Create a copy of the new item without timestamps to avoid overwriting existing ones
+              const newItemWithoutTimestamps = { ...result.item };
+              if (newItemWithoutTimestamps._stats) {
+                delete newItemWithoutTimestamps._stats.createdTime;
+                delete newItemWithoutTimestamps._stats.modifiedTime;
+              }
 
-            // Restore the original createdTime
-            if (existingCreatedTime && existingItem._stats) {
-              existingItem._stats.createdTime = existingCreatedTime;
-            }
+              // Deep merge the new item (without timestamps) into the existing one
+              const mergedItem = lodash.merge({}, existingItem, newItemWithoutTimestamps);
 
-            updatedItems++;
-            logInfo(`Updated existing item: ${result.name} - preserved original createdTime`);
-          } else {
+              // Ensure _stats exists
+              if (!mergedItem._stats) {
+                mergedItem._stats = {};
+              }
+
+              // Set the recorded timestamps in the merged item
+              mergedItem._stats.createdTime = existingCreatedTime || Date.now();
+              mergedItem._stats.modifiedTime = newModifiedTime || Date.now();
+
+              // Create copies without timestamps for comparison
+              const mergedItemForComparison = JSON.parse(JSON.stringify(mergedItem));
+              if (mergedItemForComparison._stats) {
+                delete mergedItemForComparison._stats.createdTime;
+                delete mergedItemForComparison._stats.modifiedTime;
+              }
+
+              const existingItemForComparison = JSON.parse(JSON.stringify(existingItem));
+              if (existingItemForComparison._stats) {
+                delete existingItemForComparison._stats.createdTime;
+                delete existingItemForComparison._stats.modifiedTime;
+              }
+
+              // Compare the merged item with the existing item (excluding timestamps)
+              const itemsAreEqual = JSON.stringify(mergedItemForComparison) === JSON.stringify(existingItemForComparison);
+
+              if (itemsAreEqual) {
+                // Items are identical (excluding timestamps), no update needed
+                reusedItems++;
+                logInfo(`Skipped identical item: ${result.name} - no changes detected`);
+              } else {
+                // Items are different, replace the existing item with the merged one
+                const index = existingRecords.findIndex(record =>
+                  record._metadata && record._metadata.key && record._metadata.key.startsWith('!items!') &&
+                  record.system && record.system.slug === result.item.system.slug
+                );
+                if (index !== -1) {
+                  existingRecords[index] = mergedItem;
+                }
+
+                updatedItems++;
+                logInfo(`Updated existing item: ${result.name} - deep merged and preserved original createdTime`);
+              }
+            } else {
             // Add new item
             newRecords.push(result.item);
             if (result.isExisting) {
