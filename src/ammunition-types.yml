@@ -10,6 +10,10 @@
   title_template: "{material} {weapon_type} {ammo_type.plural} ({grade})"
   folder:         Rounds
   ammo_type:      Round
+  description_template: >-
+    These are standard {ammo_type.plural} for use with {weapon_type.plural},
+    but they are made from {grade} {material} so can be used with magic
+    {weapon_type.plural} {grade.limit}.
 
 .rounds5: &rounds5
   <<: *rounds
@@ -39,13 +43,13 @@
 .crossbow-magazine: &crossbow-magazine
   quantity:             1
   max_uses:             5
-  title_template:       "{name} with {material} bolts ({grade})"
+  title_template:       "{name} with {material} {ammo_type.plural} ({grade})"
   ammo_type:            Bolt
   image:                "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp"
   description_template: >-
-    This is a magazine of standard bolts for use with {weapon_type.plural},
-    but the heads are made from {grade} {material} so can be used
-    with magic {weapon_type.plural} {grade.limit}.
+    This is a magazine of 5 bolts for use with {weapon_type.plural}, but the
+    heads are made from {grade} {material} so can be used with magic
+    {weapon_type.plural} {grade.limit}.
 
 Arrows:
   <<: [*common, *consumable, *10pack]
@@ -100,6 +104,9 @@ Sling Bullets:
   folder:             Sling Bullets
   weapon_type:        Sling
   ammo_type:          Bullet
+  description_template: >-
+    These are standard {weapon_type} {ammo_type.plural}, but they are made from {grade}
+    {material} so may be used with magic {weapon_type.plural} {grade.limit}.
 
 Arquebus Rounds:
   <<: *rounds10
@@ -136,6 +143,10 @@ Double-Barreled Pistol Rounds:
 Dragon Mouth Pistol Rounds:
   <<: *rounds10
   weapon_type: Dragon Mouth Pistol
+
+Dueling Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Dueling Pistol
 
 Dwarven Scattergun Rounds:
   <<: *rounds5
