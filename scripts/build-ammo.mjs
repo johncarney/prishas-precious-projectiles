@@ -313,8 +313,7 @@ function generateAmmunitionItem(ammunitionType, material, grade) {
       _id: itemId,
       sort: 0,
       _metadata: {
-        key: `!items!${itemId}`,
-        extractedAt: new Date().toISOString()
+        key: `!items!${itemId}`
       }
     };
 

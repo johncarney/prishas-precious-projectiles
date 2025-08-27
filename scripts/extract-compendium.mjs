@@ -103,8 +103,7 @@ async function extractLevelDB(dbPath, outputPath) {
           const record = {
             ...value,
             _metadata: {
-              key: key,
-              extractedAt: new Date().toISOString()
+              key: key
             }
           };
 
@@ -170,11 +169,11 @@ async function extractLevelDB(dbPath, outputPath) {
       });
 
       // Show some sample keys
-      logStep('Sample record keys:');
-      const sampleKeys = records.slice(0, 5).map(r => r._metadata.key);
-      sampleKeys.forEach(key => {
-        logInfo(`  ${key}`);
-      });
+      // logStep('Sample record keys:');
+      // const sampleKeys = records.slice(0, 5).map(r => r._metadata.key);
+      // sampleKeys.forEach(key => {
+      //   logInfo(`  ${key}`);
+      // });
     }
 
   } catch (error) {
