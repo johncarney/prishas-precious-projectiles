@@ -93,6 +93,41 @@ function loadYamlData() {
 }
 
 /**
+ * Generate a new folder record
+ */
+function generateFolder(folderName) {
+  const uuid = uuidv4();
+  const folderId = uuid62.encode(uuid);
+  const now = Date.now();
+
+  const folder = {
+    name: folderName,
+    sorting: "a",
+    folder: null,
+    type: "Item",
+    _id: folderId,
+    description: "",
+    sort: 100000,
+    color: null,
+    flags: {},
+    _stats: {
+      compendiumSource: null,
+      duplicateSource: null,
+      coreVersion: "12.327",
+      systemId: "pf2e",
+      systemVersion: "6.0.4",
+      createdTime: now,
+      modifiedTime: now
+    },
+    _metadata: {
+      key: `!folders!${folderId}`
+    }
+  };
+
+  return folder;
+}
+
+/**
  * Load compendium data and create folder lookup map
  */
 function loadCompendiumData() {
@@ -119,16 +154,15 @@ function loadCompendiumData() {
     }
   }
 
-  return { folderMap, itemSlugMap };
+  return { folderMap, itemSlugMap, compendiumData };
 }
 
 /**
  * Generate ammunition item JSON
  */
-function generateAmmunitionItem(ammunitionType, material, grade) {
+function generateAmmunitionItem(ammunitionType, material, grade, folderMap, itemSlugMap, compendiumData, newFolders) {
   try {
     const { ammunitionTypes, weaponMaterials } = loadYamlData();
-    const { folderMap, itemSlugMap } = loadCompendiumData();
 
     // Validate inputs
     if (!ammunitionTypes[ammunitionType]) {
@@ -203,10 +237,20 @@ function generateAmmunitionItem(ammunitionType, material, grade) {
     let folderId = null;
 
     if (folderName) {
-      if (!folderMap.has(folderName)) {
-        throw new Error(`Folder not found: ${folderName}`);
-      }
-      folderId = folderMap.get(folderName);
+              if (!folderMap.has(folderName)) {
+          // Auto-generate the folder if it doesn't exist
+          logInfo(`Auto-generating folder: ${folderName}`);
+          const newFolder = generateFolder(folderName);
+          folderId = newFolder._id;
+          folderMap.set(folderName, folderId);
+
+          // Add the new folder to the compendium data
+          compendiumData.push(newFolder);
+          newFolders.add(folderName);
+          logSuccess(`Generated new folder: ${folderName} (${folderId})`);
+        } else {
+          folderId = folderMap.get(folderName);
+        }
     }
 
     // Create the item object
@@ -341,6 +385,7 @@ function generateAmmunitionItem(ammunitionType, material, grade) {
 function generateMultipleAmmunitionItems(ammunitionTypes, materials, grades, outputPath) {
   logStep('Loading configuration data...');
   const { ammunitionTypes: ammoConfigs, weaponMaterials } = loadYamlData();
+  const { folderMap, itemSlugMap, compendiumData } = loadCompendiumData();
 
   // Validate all inputs first
   for (const ammoType of ammunitionTypes) {
@@ -367,6 +412,7 @@ function generateMultipleAmmunitionItems(ammunitionTypes, materials, grades, out
   let newItems = 0;
   let reusedItems = 0;
   const items = [];
+  const newFolders = new Set();
 
   // Generate items for each permutation
   for (const ammoType of ammunitionTypes) {
@@ -375,7 +421,7 @@ function generateMultipleAmmunitionItems(ammunitionTypes, materials, grades, out
         totalItems++;
 
         try {
-          const result = generateAmmunitionItem(ammoType, material, grade);
+          const result = generateAmmunitionItem(ammoType, material, grade, folderMap, itemSlugMap, compendiumData, newFolders);
 
           if (result.isExisting) {
             reusedItems++;
@@ -392,12 +438,30 @@ function generateMultipleAmmunitionItems(ammunitionTypes, materials, grades, out
     }
   }
 
-  // Write all items to the output file as an array
-  writeFileSync(outputPath, JSON.stringify(items, null, 2), 'utf8');
+
+
+  // Collect auto-generated folders for output
+  const allRecords = [...items];
+  if (newFolders.size > 0) {
+    for (const record of compendiumData) {
+      if (record._metadata && record._metadata.key && record._metadata.key.startsWith('!folders!')) {
+        if (newFolders.has(record.name)) {
+          allRecords.push(record);
+        }
+      }
+    }
+  }
+
+  // Write all records to the output file as an array
+  writeFileSync(outputPath, JSON.stringify(allRecords, null, 2), 'utf8');
 
   logSuccess(`Generated ${totalItems} ammunition items total:`);
   logInfo(`  New items: ${newItems}`);
   logInfo(`  Reused items: ${reusedItems}`);
+  if (newFolders.size > 0) {
+    logInfo(`  New folders created: ${newFolders.size}`);
+    logInfo(`  Total records in output: ${allRecords.length}`);
+  }
   logInfo(`  Output file: ${outputPath}`);
 }
 
