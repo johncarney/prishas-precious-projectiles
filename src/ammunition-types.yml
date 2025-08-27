@@ -1,0 +1,217 @@
+.common: &common
+  rarity: common
+
+.uncommon: &uncommon
+  rarity: uncommon
+
+.rounds: &rounds
+  <<: *common
+  traits:         [alchemical, consumable]
+  title_template: "{material} {weapon_type} {ammo_type.plural} ({grade})"
+  folder:         Rounds
+  ammo_type:      Round
+  description_template: >-
+    These are standard {ammo_type.plural} for use with {weapon_type.plural},
+    but they are made from {grade} {material} so can be used with magic
+    {weapon_type.plural} {grade.limit}.
+
+.rounds5: &rounds5
+  <<: *rounds
+  quantity:    5
+  max_uses:    1
+  stack_group: rounds5
+  image:       "systems/pf2e/icons/equipment/weapons/sling-bullets.webp"
+
+.rounds10: &rounds10
+  <<: *rounds
+  quantity:    10
+  max_uses:    1
+  stack_group: rounds10
+
+.consumable: &consumable
+  traits: [consumable]
+
+.10pack: &10pack
+  quantity:             10
+  max_uses:             1
+  title_template:       "{material} {name} ({grade})"
+  description_template: >-
+    These are standard {weapon_type} {ammo_type.plural}, but the heads are
+    made from {grade} {material} so can be used with magic
+    {weapon_type.plural} {grade.limit}.
+
+.crossbow-magazine: &crossbow-magazine
+  quantity:             1
+  max_uses:             5
+  title_template:       "{name} with {material} {ammo_type.plural} ({grade})"
+  ammo_type:            Bolt
+  image:                "systems/pf2e/icons/equipment/weapons/magazine-with-5-bolts.webp"
+  description_template: >-
+    This is a magazine of 5 bolts for use with {weapon_type.plural}, but the
+    heads are made from {grade} {material} so can be used with magic
+    {weapon_type.plural} {grade.limit}.
+
+Arrows:
+  <<: [*common, *consumable, *10pack]
+  stack_group: arrows
+  folder:      Arrows
+  weapon_type: Bow
+  ammo_type:   Arrow
+  image:       "systems/pf2e/icons/equipment/weapons/arrows.webp"
+  description_template: >-
+    These are standard {ammo_type.plural}, but the heads are made from {grade}
+    {material} so can be used with magic {weapon_type.plural} {grade.limit}.
+
+Blowgun Darts:
+  <<: [*common, *consumable, *10pack]
+  stack_group:          blowgunDarts
+  folder:               Blowgun Darts
+  weapon_type:          Blowgun
+  ammo_type:            Dart
+  image:                "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp"
+  description_template: >-
+    These are standard {weapon_type} {ammo_type.plural}, but they are tipped
+    with {grade} {material} so can be used with magic
+    {weapon_type.plural} {grade.limit}.
+
+Crossbow Bolts:
+  <<: [*common, *consumable, *10pack]
+  title_template: "{material} {ammo_type.plural} ({grade})"
+  stack_group:    bolts
+  folder:         Bolts
+  weapon_type:    Crossbow
+  ammo_type:      Bolt
+  image:          "systems/pf2e/icons/equipment/weapons/bolts.webp"
+
+Repeating Crossbow Magazine:
+  <<: [*uncommon, *consumable, *crossbow-magazine]
+  folder:      Magazines
+  weapon_type: Repeating Crossbow
+
+Repeating Hand Crossbow Magazine:
+  <<: [*uncommon, *consumable, *crossbow-magazine]
+  folder:      Magazines
+  weapon_type: Repeating Hand Crossbow
+
+Repeating Heavy Crossbow Magazine:
+  <<: [*uncommon, *consumable, *crossbow-magazine]
+  folder:      Magazines
+  weapon_type: Repeating Heavy Crossbow
+
+Sling Bullets:
+  <<: [*common, *consumable, *10pack]
+  stack_group:        slingBullets
+  folder:             Sling Bullets
+  weapon_type:        Sling
+  ammo_type:          Bullet
+  description_template: >-
+    These are standard {weapon_type} {ammo_type.plural}, but they are made from {grade}
+    {material} so may be used with magic {weapon_type.plural} {grade.limit}.
+
+Arquebus Rounds:
+  <<: *rounds10
+  weapon_type: Arquebus
+
+Axe Musket Rounds:
+  <<: *rounds10
+  weapon_type: Axe Musket
+
+# Black Powder Knuckle Dusters:
+#   <<: *rounds10
+#   weapon_type: Black Powder Knuckle Dusters
+
+Cane Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Cane Pistol
+
+Clan Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Clan Pistol
+
+Coat Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Coat Pistol
+
+Double-Barreled Musket Rounds:
+  <<: *rounds10
+  weapon_type: Double-Barreled Musket
+
+Double-Barreled Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Double-Barreled Pistol
+
+Dragon Mouth Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Dragon Mouth Pistol
+
+Dueling Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Dueling Pistol
+
+Dwarven Scattergun Rounds:
+  <<: *rounds5
+  weapon_type: Dwarven Scattergun
+
+Explosive Dogslicer Rounds:
+  <<: *rounds5
+  weapon_type: Explosive Dogslicer
+
+Fire Lance Rounds:
+  <<: *rounds10
+  weapon_type: Fire Lance
+
+Flingflenser Rounds:
+  <<: *rounds5
+  weapon_type: Flingflenser
+
+Flintlock Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Flintlock Pistol
+
+Gnome Amalgam Musket Rounds:
+  <<: *rounds10
+  weapon_type: Gnome Amalgam Musket
+
+Gun Sword Rounds:
+  <<: *rounds10
+  weapon_type: Gun Sword
+
+Hammer Gun Rounds:
+  <<: *rounds10
+  weapon_type: Hammer Gun
+
+Hand Cannon Rounds:
+  <<: *rounds10
+  weapon_type: Hand Cannon
+
+Jezail Rounds:
+  <<: *rounds10
+  weapon_type: Jezail
+
+Mace Multipistol Rounds:
+  <<: *rounds10
+  weapon_type: Mace Multipistol
+
+Mithral Tree Rounds:
+  <<: *rounds10
+  weapon_type: Mithral Tree
+
+Piercing Wind Rounds:
+  <<: *rounds10
+  weapon_type: Piercing Wind
+
+Rapier Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Rapier Pistol
+
+Slide Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Slide Pistol
+
+Three Peaked Tree Rounds:
+  <<: *rounds10
+  weapon_type: Three Peaked Tree
+
+Shield Pistol Rounds:
+  <<: *rounds10
+  weapon_type: Shield Pistol

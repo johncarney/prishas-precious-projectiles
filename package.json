@@ -1,6 +1,5 @@
 {
   "name": "prishas-precious-projectiles",
-  "version": "1.1.2",
   "description": "A Foundry VTT module for Pathfinder 2E adding custom ammunition types",
   "main": "dist/module.js",
   "type": "module",
@@ -14,13 +13,21 @@
     "ts:build": "tsc && npm run minify",
     "ts:watch": "tsc --watch",
     "minify": "terser dist/module.js -o dist/module.js --compress --mangle",
-    "dev": "npm run ts:build && npm run build"
+    "dev": "npm run ts:build && npm run build",
+    "compendium:extract": "node scripts/extract-compendium.mjs",
+    "compendium:pack": "node scripts/pack-compendium.mjs",
+    "ammo:build": "node scripts/build-ammo.mjs",
+    "ammo:merge": "node scripts/merge-ammo.mjs",
+    "ammo:generate": "node scripts/generate-ammo.mjs"
   },
   "devDependencies": {
+    "@types/node": "^20.10.5",
+    "classic-level": "^2.0.0",
     "nodemon": "^3.0.2",
-    "typescript": "^5.3.3",
     "terser": "^5.24.0",
-    "@types/node": "^20.10.5"
+    "typescript": "^5.3.3",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
   },
   "keywords": [
     "foundry-vtt",

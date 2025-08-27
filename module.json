@@ -1,7 +1,7 @@
 {
   "id": "prishas-precious-projectiles",
   "title": "PF2e Prisha's Precious Projectiles",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "compatibility": {
     "minimum": "12",
     "verified": "13.347"
@@ -59,5 +59,5 @@
   },
   "url": "https://github.com/johncarney/prishas-precious-projectiles",
   "manifest": "https://github.com/johncarney/prishas-precious-projectiles/releases/latest/download/module.json",
-  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/1.2.0/prishas-precious-projectiles.zip"
+  "download": "https://github.com/johncarney/prishas-precious-projectiles/releases/download/2.0.0/prishas-precious-projectiles.zip"
 }
