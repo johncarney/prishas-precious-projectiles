@@ -18,7 +18,8 @@
     "compendium:extract": "node scripts/extract-compendium.mjs",
     "compendium:pack": "node scripts/pack-compendium.mjs",
     "ammo:build": "node scripts/build-ammo.mjs",
-    "ammo:merge": "node scripts/merge-ammo.mjs"
+    "ammo:merge": "node scripts/merge-ammo.mjs",
+    "ammo:generate": "node scripts/generate-ammo.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
